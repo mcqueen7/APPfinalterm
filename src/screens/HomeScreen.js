@@ -5,7 +5,7 @@ import { Box } from "native-base";
 const HomeScreen = ({ navigation }) => {
   return (
     <Box bg="white">
-        this is home
+       
     </Box>
   );
 };

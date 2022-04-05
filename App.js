@@ -8,11 +8,9 @@ import Navigation from './src/navigation';
 export default function App() {
   return (
     <SafeAreaProvider>
-    {/* <SafeAreaView style={{ flex: 1 }}> */}
       <NativeBaseProvider>
         <Navigation />
       </NativeBaseProvider>
-    {/* </SafeAreaView> */}
   </SafeAreaProvider>
 
   );
