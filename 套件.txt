@@ -11,6 +11,13 @@ expo install react-native-svg
 TAB套件
 yarn add @react-navigation/bottom-tabs
 
+Material Bottom Tabs套件
+yarn add @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons
+
+Material TOP Tabs套件
+yarn add @react-navigation/material-top-tabs react-native-tab-view
+
+expo install react-native-pager-view
 DRAWER套件
 yarn add @react-navigation/drawer @babel/preset-typescript
 

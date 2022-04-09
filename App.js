@@ -8,19 +8,11 @@ import Navigation from './src/navigation';
 export default function App() {
   return (
     <SafeAreaProvider>
+      {/* <SafeAreaView>  
+      </SafeAreaView> */}
       <NativeBaseProvider>
         <Navigation />
       </NativeBaseProvider>
-  </SafeAreaProvider>
-
+   </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

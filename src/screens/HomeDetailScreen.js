@@ -4,7 +4,10 @@ const HomeDetailScreen = ({ route }) => {
     return (
       <Box bg="white" height={640} > 
        
-             <Text>ASS</Text>
+             <Text>LslkdfjlkjLasasdasfgsg</Text>
+             <Text>LslkdfjlkjLasasdasfgsg</Text>
+             <Text>LslkdfjlkjLasasdasfgsg</Text>
+             <Text>LslkdfjlkjLasasdasfgsg</Text>
          
         
       </Box>
