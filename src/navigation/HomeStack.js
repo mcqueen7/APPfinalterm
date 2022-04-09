@@ -8,14 +8,16 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
 import HomeTabs from "./HomeTabs";
-
+import HomeScreen from "../screens/HomeScreen";
+import HomeAllStack from "./HomeAllStack";
 const Stack = createNativeStackNavigator(); 
 
-const HomeStack = ({navigation}) => {
+const HomeStack = () => {
     return (
       <Stack.Navigator
+        initialRouteName="HomeTabs"
         screenOptions={{
-          headerShown: true
+        //   headerShown: true
         }}
       >
         <Stack.Screen
@@ -24,6 +26,7 @@ const HomeStack = ({navigation}) => {
           options={{
             title: "ColleGo",
             headerTitleAlign:"center",
+            headerShadowVisible:false,
             headerStyle:{
               elevation: 0, // remove shadow on Android
               shadowOpacity: 0, // remove shadow on iOS

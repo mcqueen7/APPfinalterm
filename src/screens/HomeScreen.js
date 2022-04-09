@@ -10,9 +10,13 @@ const Tab2 =  createMaterialTopTabNavigator();
 
 const HomeScreen = ({ navigation }) => {
   return (
-
-      <HomeTabs />
+    <Box>
+      <Text>FUCKING HOME</Text>
+    </Box>
+      
   );
 };
 
 export default HomeScreen;
+
+

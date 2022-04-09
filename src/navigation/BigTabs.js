@@ -14,15 +14,17 @@ import HomeScreen from '../screens/HomeScreen';
 import HomeDetailScreen from '../screens/HomeDetailScreen';
 import HomeTabs from "./HomeTabs";
 import HomeStack from "./HomeStack";
+import HomeTraceStack from "./HomeTraceStack";
+import HomeAllStack from "./HomeAllStack";
 
 
 const BigTabs = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="HomeStack"
       screenOptions={{
-        tabBarActiveTintColor: '#3B5998',
-        lazy:"false",
+        // tabBarActiveTintColor: '#3B5998',
+        lazy:true,
       }}
       shifting={true}
       labeled={true}
@@ -37,7 +39,6 @@ const BigTabs = () => {
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
           tabBarColor:"#3B5998",
-         
         }}
       />
       <Tab.Screen 
@@ -48,29 +49,28 @@ const BigTabs = () => {
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="bookmark" color={color} size={26} />
           ),
-          tabBarColor:"#3B5998",
-          
+          tabBarColor:"#415fa6",
         }}
       />
       <Tab.Screen 
         name="Create" 
-        component={HomeDetailScreen} 
+        component={HomeTraceStack} 
         options={{
           title: "Create",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="book-open" color={color} size={26} />
           ),
-          tabBarColor:"#3B5998",
+          tabBarColor:"#4666b3",
         }}
       />
         <Tab.Screen 
         name="Explore" 
-        component={HomeDetailScreen} 
+        component={HomeStack} 
         options={{
           title: "Explore",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="book-open" color={color} size={26} />
-          ),tabBarColor:"#3B5998",
+          ),tabBarColor:"#4b6ebf",
         }}
       />
         <Tab.Screen 
@@ -81,7 +81,7 @@ const BigTabs = () => {
           tabBarBadge:"99+",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="book-open" color={color} size={26} />
-          ),tabBarColor:"#3B5998",
+          ),tabBarColor:"#5075cc",
         }}
       />
     </Tab.Navigator>
