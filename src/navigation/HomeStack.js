@@ -8,8 +8,6 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
 import HomeTabs from "./HomeTabs";
-import HomeScreen from "../screens/HomeScreen";
-import HomeAllStack from "./HomeAllStack";
 const Stack = createNativeStackNavigator(); 
 
 const HomeStack = () => {
@@ -33,11 +31,14 @@ const HomeStack = () => {
               backgroundColor:"#fff",
             //   shadowOffset:0,
             },
+            headerTitleStyle: {
+              fontSize:40,
+            },
             headerLeft: () => (
               <MaterialCommunityIcons
-                name={'menu'}
+                name={'yin-yang'}
                 size={24}
-                onPress={() => alert("Drawer")}
+                onPress={() => alert("G")}
                 style={{ marginLeft: 16 }}
               />
             ),

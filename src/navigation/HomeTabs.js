@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
+import {Box,Center,HStack,Text} from "native-base"
 
 const Tab2 =  createMaterialTopTabNavigator();
 
@@ -20,7 +20,31 @@ const HomeTabs = () => {
       <Tab2.Navigator
       initialRouteName="All"
       screenOptions={{  
-        tabBarActiveTintColor :'#3B5998',
+        tabBarActiveTintColor :"#3B5998",
+        tabBarBounces:"true",
+        tabBarIndicatorContainerStyle:{
+          // textAlign:"center",
+          // alignContent:"center",
+          // flex:1,
+          // alignContent:"center",
+          // justifyContent:"center",
+        },
+        tabBarIndicatorStyle:{
+          width:80,
+          height:7,
+          left:"7%",
+          // flex:1,
+          // alignContent:"center",
+          // justifyContent:"center",
+          // textAlign:"center",
+          // marginLeft:50,
+        },
+        tabBarLabelStyle: { 
+          fontSize: 16,
+        },
+        tabBarStyle:{
+          backgroundColor:"#ffffff"
+        },
       }}
       >
       <Tab2.Screen 

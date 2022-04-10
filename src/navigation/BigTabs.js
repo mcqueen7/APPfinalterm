@@ -6,16 +6,15 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
-//test
+
 const Stack = createNativeStackNavigator();
-const Tab =  createMaterialBottomTabNavigator();
-// const Tab =  createBottomTabNavigator();
-import HomeScreen from '../screens/HomeScreen';
+const Tab =  createMaterialBottomTabNavigator();   //trash navigator full of bugs
+// const Tab =  createBottomTabNavigator();         //normal navigator
+
 import HomeDetailScreen from '../screens/HomeDetailScreen';
-import HomeTabs from "./HomeTabs";
 import HomeStack from "./HomeStack";
 import HomeTraceStack from "./HomeTraceStack";
-import HomeAllStack from "./HomeAllStack";
+
 
 
 const BigTabs = () => {
@@ -25,6 +24,7 @@ const BigTabs = () => {
       screenOptions={{
         // tabBarActiveTintColor: '#3B5998',
         lazy:true,
+        
       }}
       shifting={true}
       labeled={true}
@@ -34,9 +34,9 @@ const BigTabs = () => {
         component={HomeStack}
         options={{
           title: "Home",
-          tabBarBadge:7,
+          // tabBarBadge:7,
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="home" color={color} size={30} />
           ),
           tabBarColor:"#3B5998",
         }}
@@ -47,7 +47,7 @@ const BigTabs = () => {
         options={{
           title: "Wishlist",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bookmark" color={color} size={26} />
+            <MaterialCommunityIcons name="magnify" color={color} size={30} />
           ),
           tabBarColor:"#415fa6",
         }}
@@ -58,8 +58,14 @@ const BigTabs = () => {
         options={{
           title: "Create",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="book-open" color={color} size={26} />
+            <MaterialCommunityIcons name="plus-circle" color={color} size={30} />
           ),
+          // tabBarOptions: {
+          //   iconStyle: {
+          //     width: 1000,
+          //     height: 1000,
+          //   },
+          // },
           tabBarColor:"#4666b3",
         }}
       />
@@ -68,8 +74,9 @@ const BigTabs = () => {
         component={HomeStack} 
         options={{
           title: "Explore",
+          tabBarBadge:"7",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="book-open" color={color} size={26} />
+            <MaterialCommunityIcons name="playlist-edit" color={color} size={30} />
           ),tabBarColor:"#4b6ebf",
         }}
       />
@@ -80,7 +87,7 @@ const BigTabs = () => {
           title: "Personal",
           tabBarBadge:"99+",
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="book-open" color={color} size={26} />
+            <MaterialCommunityIcons name="account" color={color} size={30} />
           ),tabBarColor:"#5075cc",
         }}
       />
