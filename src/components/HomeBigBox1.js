@@ -7,9 +7,9 @@ const image1 = { uri: "https://reactjs.org/logo-og.png" };
 const HomeBigBox1 = ({boxdata}) => {
     const image = { uri:`${boxdata.bg}` };
     return( 
-        <Box mt="25" w="400" maxW="100%" h="230" bgColor="#C8C8C8" alignItems="center" justifyContent="center">
-          <ImageBackground source={image} resizeMode="cover" style={styles.bg}>
-          <HStack  alignContent="center">
+        <Center mt="25" w="400" maxW="100%" h="230" bgColor="#C8C8C8" alignItems="center" justifyContent="center" borderRadius={20}>
+          <ImageBackground source={image} resizeMode="contain" style={styles.bg} imageStyle={{borderRadius:10}}>
+          <HStack  alignContent="center" >
             <VStack ml="16px">
               <Text fontSize={16}>{boxdata.title}</Text>
               <Box borderColor="black" borderTopWidth={1} borderBottomWidth={1} w="180" h="5px"></Box>
@@ -20,7 +20,7 @@ const HomeBigBox1 = ({boxdata}) => {
             </VStack>
           </HStack>
           </ImageBackground>
-        </Box>
+        </Center>
     );
 };
 const styles = StyleSheet.create({
@@ -28,8 +28,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignContent:"center",
-    width:400,
-    height: 230,
+    width: 400,
+    height:230,
+    
+    
   },
 });
 

@@ -53,9 +53,9 @@ const HomeAllList = (navigation) => {
                 </>
             )
         case "4boxes":
-            return  <Center><Heading fontSize="xl" mt="8" pb="4">FUCK2{section.title} </Heading></Center>    
+            return  <Heading fontSize="24px" mt="30px">{section.title} </Heading>   //mr26px
         case "big2":
-            return <Center><Heading fontSize="xl" mt="8" pb="4">FUCK2{section.title} </Heading></Center>    
+            return null    
         default:
             return null
     }
@@ -72,7 +72,7 @@ const HomeAllList = (navigation) => {
         case "4boxes":
             return null
         case "big2":
-            return <HomeBigBox1 boxdata={item}/>
+            return <HomeBigBox1 boxdata={item}/>//74
         default:
             return null
     }
