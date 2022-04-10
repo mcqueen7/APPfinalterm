@@ -1,11 +1,12 @@
 import React from "react";
 import {  StyleSheet } from "react-native";
-import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, } from 'native-base';
+import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, } from 'native-base';
 
 import sections from "../json/home_all_section.json";
 // import sections from "../json/test.json";
 import HomeAllSchoolDetail from "./HomeAllSchoolDetail";
 import HomeBigBox1 from "./HomeBigBox1";
+import Home8Boxes from "./Home8Boxes";
 
 // console.log(sections);
 const HomeAllList = (navigation) => {
@@ -14,9 +15,9 @@ const HomeAllList = (navigation) => {
         case "big1":
             return null
         case "8boxes1":
-            return  <Heading fontSize="24" mt="8" pb="4">{section.title} </Heading>   
+            return  <HStack><Heading fontSize="24" mt="5" mr="230px">{section.title}</Heading><Heading fontSize="16" mt="5">More</Heading></HStack>
         case "8boxes2":
-            return  <Heading fontSize="24" mt="8" pb="4">{section.title} </Heading>  
+            return  <HStack><Heading fontSize="24" mt="7" mr="230px">{section.title}</Heading><Heading fontSize="16" mt="5">More</Heading></HStack>
         case "4boxes":
             return  <Center> <Heading fontSize="xl" mt="8" pb="4">FUCK2{section.title} </Heading> </Center>    
         case "big2":
@@ -33,7 +34,7 @@ const HomeAllList = (navigation) => {
         case "big1":
             return <HomeBigBox1 boxdata={item}/>
         case "8boxes1":
-            return null
+            return <Home8Boxes boxdata={item}/>
         case "8boxes2":
             return null
         case "4boxes":
