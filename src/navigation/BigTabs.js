@@ -24,7 +24,6 @@ const BigTabs = () => {
       screenOptions={{
         // tabBarActiveTintColor: '#3B5998',
         lazy:true,
-        
       }}
       shifting={true}
       labeled={true}

@@ -7,17 +7,16 @@ import sections from "../json/home_all_section.json";
 import HomeAllSchoolDetail from "./HomeAllSchoolDetail";
 import HomeBigBox1 from "./HomeBigBox1";
 
-
 // console.log(sections);
-
 const HomeAllList = (navigation) => {
   const renderSectionHeader = ({section}) => {
-     
     switch (section.type){
         case "big1":
             return null
-        case "8boxes":
-            return  <Center> <Heading fontSize="xl" mt="8" pb="4">FUCK2{section.title} </Heading> </Center>     
+        case "8boxes1":
+            return  <Heading fontSize="24" mt="8" pb="4">{section.title} </Heading>   
+        case "8boxes2":
+            return  <Heading fontSize="24" mt="8" pb="4">{section.title} </Heading>  
         case "4boxes":
             return  <Center> <Heading fontSize="xl" mt="8" pb="4">FUCK2{section.title} </Heading> </Center>    
         case "big2":
@@ -33,7 +32,9 @@ const HomeAllList = (navigation) => {
     switch (section.type){
         case "big1":
             return <HomeBigBox1 boxdata={item}/>
-        case "8boxes":
+        case "8boxes1":
+            return null
+        case "8boxes2":
             return null
         case "4boxes":
             return null

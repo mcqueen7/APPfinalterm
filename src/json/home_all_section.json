@@ -11,7 +11,7 @@
    },
    {
       "title": "認識學群",
-      "type": "8boxes",
+      "type": "8boxes1",
       "data": [
          {
             "title":"資訊",
@@ -57,7 +57,7 @@
    },
    {
       "title": "認識學類",
-      "type": "8boxes",
+      "type": "8boxes2",
       "data": [
          {
             "title":"資訊",
