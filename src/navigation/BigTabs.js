@@ -14,8 +14,7 @@ const Tab =  createMaterialBottomTabNavigator();   //trash navigator full of bug
 import HomeDetailScreen from '../screens/HomeDetailScreen';
 import HomeStack from "./HomeStack";
 import HomeTraceStack from "./HomeTraceStack";
-
-
+import PersonalStack from "./PersonalStack";
 
 const BigTabs = () => {
   return (
@@ -81,7 +80,7 @@ const BigTabs = () => {
       />
         <Tab.Screen 
         name="Personal" 
-        component={HomeDetailScreen} 
+        component={PersonalStack} 
         options={{
           title: "Personal",
           tabBarBadge:"99+",

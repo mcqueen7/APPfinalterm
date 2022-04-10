@@ -8,52 +8,38 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
 import HomeTabs from "./HomeTabs";
+import PersonalScreen from "../screens/PersonalScreen";
 const Stack = createNativeStackNavigator(); 
 
-const HomeStack = () => {
+const PersonalStack = () => {
     return (
       <Stack.Navigator
-        initialRouteName="HomeTabs"
+        initialRouteName="PersonalScreen"
         screenOptions={{
-        //   headerShown: true
         }}
       >
         <Stack.Screen
-          name="HomeTabs"
-          component={HomeTabs}
+          name="PersonalScreen"
+          component={PersonalScreen}
           options={{
-            title: "ColleGo",
+            title: "個人",
             headerTitleAlign:"center",
-            headerShadowVisible:false,
             headerStyle:{
-              elevation: 0, // remove shadow on Android
-              shadowOpacity: 0, // remove shadow on iOS
-              backgroundColor:"#fff",
-            //   shadowOffset:0,
+                backgroundColor:"#FFF1CD",
+            },
+            headerShadowVisible:{
+                shadowColor: "#000",
+                shadowOffset: { width: 0, height: 5},
+                shadowOpacity: 0.8,
+                elevation: 5, // Android Only
             },
             headerTitleStyle: {
               fontSize:40,
             },
-            headerLeft: () => (
-              <MaterialCommunityIcons
-                name={'yin-yang'}
-                size={24}
-                onPress={() => alert("GG~")}
-                style={{ marginLeft: 16 }}
-              />
-            ),
-            headerRight: () => (
-              <MaterialCommunityIcons
-                name={'bell-outline'}
-                size={24}
-                onPress={() => alert("Notify")}
-                style={{ marginRight: 16 }}
-              />
-            ),
           }}
         />
       </Stack.Navigator>
     );
   }
 
-export default HomeStack;
+export default PersonalStack;

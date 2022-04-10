@@ -3,7 +3,7 @@ import {  StyleSheet } from "react-native";
 import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box, } from 'native-base';
 
 import sections from "../json/home_all_section.json";
-// import sections from "../json/test.json";
+
 import HomeAllSchoolDetail from "./HomeAllSchoolDetail";
 import HomeBigBox1 from "./HomeBigBox1";
 import HomeBigBox2 from "./HomeBigBox2";
@@ -12,6 +12,7 @@ import Home8Boxes2 from "./Home8Boxes2";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 // console.log(sections);
+
 const HomeAllList = (navigation) => {
   const renderSectionHeader = ({section}) => {
     switch (section.type){
@@ -89,8 +90,6 @@ const HomeAllList = (navigation) => {
         keyExtractor={(item,index) => item + index} 
         renderSectionHeader={renderSectionHeader} 
         renderItem={renderItem} 
-        
-        
         />
   );
 };
