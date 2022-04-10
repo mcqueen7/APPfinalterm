@@ -45,7 +45,7 @@ const HomeAllList = (navigation) => {
    
   };
   return (
-    <SectionList maxW="500" w="100%" mb="50"
+    <SectionList maxW="500" w="100%" mb="50" bgColor={"white"}
         sections={sections} 
         contentContainerStyle={{ paddingHorizontal: 14 }}
         stickySectionHeadersEnabled={false}
