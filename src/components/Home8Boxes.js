@@ -1,24 +1,21 @@
 import React from "react";
 import { StyleSheet} from "react-native";
-import {Box,Button,Center,HStack,Text, VStack} from "native-base"
+import {Box,Button,Center,HStack,Text, VStack,Image} from "native-base"
 import { ImageBackground } from "react-native";
+import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
-const Home8Boxes = ({boxdata}) => {
+const Home8Boxes = ({boxdata,navigation}) => {
+    
     return( 
-        <Box mt="30" w="380" ml="10" maxW="100%" h="180" bgColor="blue.500" alignItems="center" justifyContent="center" flex={1} flexWrap="wrap">
-         
-        </Box>
+        <Center mt="20px" w="80px" mr="10px" ml="10px"h="80px" bgColor="#FFF1CD"  borderRadius={12}>
+            <Pressable onPress={()=>alert("FUCK YOU!")}>
+                    <Image size={"50px"} resizeMode={"cover"} borderRadius={100} 
+                    source={{uri: boxdata.image}} alt={boxdata.title} />
+                    <Text fontSize={12}>{boxdata.title}</Text>
+            </Pressable>
+        </Center>
     );
 };
-const styles = StyleSheet.create({
-  bg: {
-    flex: 1,
-    justifyContent: "center",
-    alignContent:"center",
-    width:400,
-    height: 230,
-  },
-});
 
 
 export default Home8Boxes;
