@@ -18,7 +18,6 @@ const HomeAllSchoolDetail =({ album, navigation}) => {
   //  let { album } = props;
   
    return (
-    <NativeBaseProvider>
       <Box bg="white">
            <Pressable
               onPress={() => {console.log(album);navigation.navigation.navigate('Detail',album)}}
@@ -65,7 +64,6 @@ const HomeAllSchoolDetail =({ album, navigation}) => {
               </Box>    
             </Pressable> 
       </Box>
-     </NativeBaseProvider>
   )};
 
 const styles = StyleSheet.create({

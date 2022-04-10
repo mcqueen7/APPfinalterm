@@ -1,11 +1,136 @@
 [
    {
-      "title": "給還沒決定學群學類的你",
-      "type": "Big1",
+      "title": "big1",
+      "type": "big1",
+      "data": [{
+         "title":"給還沒決定學群學類的你",
+         "content":"透過喜歡、擅長的學科，找到適合自己的學群學類。",
+         "button":"探索領域學科",
+         "bg":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
+      }]
+   },
+   {
+      "title": "認識學群",
+      "type": "8boxes",
       "data": [
-      
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"工程",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         }
       ]
+   },
+   {
+      "title": "認識學類",
+      "type": "8boxes",
+      "data": [
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"工程",
+            "image":"",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         },
+         {
+            "title":"資訊",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png",
+            "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
+         }
+      ]
+   },
+   {
+      "title": "認識大學",
+      "type": "4boxes",
+      "data": [
+         {
+            "title":"北部",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
+         },
+         {
+            "title":"北部",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
+         },
+         {
+            "title":"北部",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
+         },
+         {
+            "title":"北部",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
+         }
+      ]  
+   },
+   {
+      "title": "big2",
+      "type": "big2",
+      "data": [{
+         "title":"給還未定向且迷惘的你",
+         "content":"我不確定自己擅長什麼，也不知道自己喜歡什麼，該怎麼辦？",
+         "button":"三年行動計畫"
+      }]
    }
-   
    
 ]
