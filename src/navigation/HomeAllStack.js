@@ -12,7 +12,6 @@ const Stack = createNativeStackNavigator();
 
 
 const HomeAllStack = () => {
-  
     return (
       <Stack.Navigator>
         <Stack.Screen 
