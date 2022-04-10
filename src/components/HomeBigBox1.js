@@ -16,7 +16,7 @@ const HomeBigBox1 = ({boxdata}) => {
             </VStack>
             <VStack flexWrap="wrap" ml="30">
               <Text w="160" fontSize={12}>{boxdata.content}</Text>
-              <Button w="110" h="40px" mt="15px" borderRadius={16} bgColor="#3B5998" >{boxdata.button}</Button>
+              <Button w="110" h="40px" mt="15px" borderRadius={16} bgColor="#3B5998" fontSize={16}>{boxdata.button}</Button>
             </VStack>
           </HStack>
           </ImageBackground>
