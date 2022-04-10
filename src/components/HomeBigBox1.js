@@ -3,7 +3,7 @@ import { StyleSheet} from "react-native";
 import {Box,Button,Center,HStack,Text, VStack} from "native-base"
 import { ImageBackground } from "react-native";
 
-const image1 = { uri: "https://reactjs.org/logo-og.png" };
+
 const HomeBigBox1 = ({boxdata}) => {
     const image = { uri:`${boxdata.bg}` };
     return( 

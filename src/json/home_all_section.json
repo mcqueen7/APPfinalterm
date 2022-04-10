@@ -128,8 +128,9 @@
       "type": "big2",
       "data": [{
          "title":"給還未定向且迷惘的你",
-         "content":"我不確定自己擅長什麼，也不知道自己喜歡什麼，該怎麼辦？",
-         "button":"三年行動計畫"
+         "content":"我不確定自己擅長什麼，\n也不知道自己喜歡什麼，該怎麼辦？",
+         "button":"三年行動計畫",
+         "bg":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/big1_bg.png"
       }]
    }
    
