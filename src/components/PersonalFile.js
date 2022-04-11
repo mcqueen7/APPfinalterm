@@ -23,7 +23,7 @@ const PersonalFile = ({ personaldata,navigation }) => {
                 <Text fontSize={12}>被收藏數</Text>
             </Center>
         </HStack>
-        <Button mt={2} w="360" bgColor={"#477CEA"} borderRadius={"20px"}>我的學習歷程</Button>
+        <Button mt={2} w="360" bgColor={"#477CEA"} borderRadius={"20px"} onPress={()=>alert("NO TIME")}>我的學習歷程</Button>
         <HStack mt={5}>
             <Center mx={7}>
                 <MaterialCommunityIcons name="account-multiple-outline" size={25} />
