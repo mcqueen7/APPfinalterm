@@ -33,6 +33,7 @@ const HomeTabs = () => {
           width:80,
           height:7,
           left:"7%",
+          borderRadius:5,
           // flex:1,
           // alignContent:"center",
           // justifyContent:"center",

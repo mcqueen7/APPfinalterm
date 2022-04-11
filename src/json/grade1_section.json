@@ -1,0 +1,89 @@
+[
+   {
+      "title": "completion",
+      "data": [
+            {
+                "title":"生涯探索",
+                "completion":"87",
+                "icon":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/big1_bg.png"
+            },
+            {
+                "title":"生涯探索",
+                "completion":"0",
+                "icon":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/big1_bg.png"
+            },{
+                "title":"生涯探索",
+                "completion":"0",
+                "icon":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/big1_bg.png"
+            },{
+                "title":"生涯探索",
+                "completion":"0",
+                "icon":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/big1_bg.png"
+            }
+        ]
+   },
+   {
+      "title": "生涯探索",
+      "data": [
+         {
+            "label":"ColleGo!新手上路",
+            "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+         },
+         {
+            "label":"探索我的興趣",
+            "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+         },
+         {
+            "label":"ColleGo!新手上路",
+            "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+         },
+         {
+            "label":"ColleGo!新手上路",
+            "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+         }
+      ]
+   },
+   {
+    "title": "生涯探索",
+    "data": [
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       }
+    ]
+ },
+ {
+    "title": "生涯探索",
+    "data": [
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       },
+       {
+          "label":"ColleGo!新手上路",
+          "image":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/computer_icon.png"
+       }
+    ]
+ }
+ 
+]
