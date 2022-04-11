@@ -1,19 +1,43 @@
 [
     {
-        "headimg":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/%E8%A8%B1%E6%82%85%E5%A4%A7%E9%A0%AD%E7%85%A7.png",
-        "name":"許悅",
-        "school":"台北市立景美女中",
-        "articleNum":"87",
-        "commentNum":"87",
-        "collectedNum":"87"
-
+        "title":"personal",
+        "data":[{
+            "headimg":"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/%E8%A8%B1%E6%82%85%E5%A4%A7%E9%A0%AD%E7%85%A7.png",
+            "name":"許悅",
+            "school":"台北市立景美女中",
+            "articleNum":"87",
+            "commentNum":"87",
+            "collectedNum":"87"
+        }]
+        
     },
     {
-        "headimg":"asdasdasd",
-        "name":"風魔小太郎",
-        "school":"台北市立師範大學附屬高級中學",
-        "articleNum":"666",
-        "commentNum":"666",
-        "collectedNum":"666"
+        "title":"options",
+        "data":[
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            },
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            },
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            },
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            },
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            },
+            {
+                "label":"我的收藏",
+                "icon":"bookmark-outline"
+            }
+        ]
     }
 ]
