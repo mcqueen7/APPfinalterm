@@ -1,57 +1,66 @@
 import React from "react";
-import { Box,Text,HStack, FlatList, Center, Image, Button, Icon } from "native-base";
+import { Box,Text,HStack, FlatList, Center, Image, Button, Icon,SectionList,Pressable} from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import personaldata from '../json/personal_section.json';
+import sections from '../json/personal_section.json';
+import PersonalFile from "../components/PersonalFile";
+import PersonalButton from "../components/PersonalButton";
 
-const index=0;
 
+console.log(sections[0]);
+
+const renderSectionHeader = ({section,navigation}) => {
+    if(section.title=="options")return null;
+    return <PersonalFile personaldata={section.data} navigation={navigation}/> 
+  };
+const renderItem = ({item,section}) => {
+    if(section.title=="personal")return null;
+       return (
+            <>
+                    <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}>
+                    <FlatList
+                        scrollEnabled={false}
+                        numColumns={2}
+                        data={item.data}
+                        renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
+                        showsHorizontalScrollIndicator={false}
+                        stickySectionHeadersEnabled={false}
+                        keyExtractor={ (item,index) => item + index}
+                    />
+                    </Pressable>
+            </>
+       )
+   
+  };
 const PersonalScreen = ({ navigation }) => {
-    
-  return (
-   <Box bgColor={"white"} w="100%" h="100%">
-       <Box bgColor={"#FFF5DB"} w="100%" h="470px">
-        <Image source={{uri:personaldata[index].headimg}} alt={`${personaldata[index].name}的照片`} size={"120px"}/>
-        <Text>{personaldata[index].name}</Text>
-        <Text>{personaldata[index].school}</Text>
-        <HStack>
-            <Center>
-                <Text>{personaldata[index].articleNum}</Text>
-                <Text>文章數</Text>
-            </Center>
-            <Center>
-                <Text>{personaldata[index].commentNum}</Text>
-                <Text>留言數</Text>
-            </Center>
-            <Center>
-                <Text>{personaldata[index].collectedNum}</Text>
-                <Text>被收藏數</Text>
-            </Center>
-        </HStack>
-        <Button>我的學習歷程</Button>
-        <HStack>
-            <Center>
-                <MaterialCommunityIcons name="account-multiple-outline" size={25} />
-               <Text>好友</Text>
-            </Center>
-            <Center>
-                <MaterialCommunityIcons name="account-group-outline" size={25} />
-                <Text>社團</Text>
-            </Center>
-            <Center >
-            <MaterialCommunityIcons name="message-text-outline" size={25} />
-                <Text>聊天室</Text>
-            </Center>
-            <Center>
-            <MaterialCommunityIcons name="gift-outline" size={25} />
-                <Text>禮物</Text>
-            </Center>
-        </HStack>
-       </Box>
-   </Box>
+    return ( 
+     <Box bgColor={"white"} w="100%" h="100%">
+        <SectionList
+            padding={0}
+            margin={0}
+            width="420px"
+            sections={sections} 
+            contentContainerStyle={{ paddingHorizontal: 14 }}
+            stickySectionHeadersEnabled={false}
+            showsVerticalScrollIndicator={false}
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item,index) => item + index} 
+            renderSectionHeader={renderSectionHeader} 
+            renderItem={renderItem} 
+        />
+    </Box>
   );
 };
 
 export default PersonalScreen;
 
 
+
+
+//for json
+// "headimg":"asdasdasd",
+// "name":"風魔小太郎",
+// "school":"台北市立師範大學附屬高級中學",
+// "articleNum":"666",
+// "commentNum":"666",
+// "collectedNum":"666"
