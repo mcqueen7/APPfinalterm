@@ -5,22 +5,21 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
-import HomeAllScreen from "../screens/HomeAllScreen"
-const Stack = createNativeStackNavigator(); 
 
+import {Box,HStack,Text} from "native-base"
+import Grade1Screen from "../screens/Grade1Screen";
+
+const Stack = createNativeStackNavigator(); 
 
 const Grade1Stack = () => {
     return (
       <Stack.Navigator>
         <Stack.Screen 
-          name="HomeAllscreen" 
-          component={HomeAllScreen}
+          name="Grade1screen" 
+          component={Grade1Screen}
           options={
             {headerShown:false}
         }
-        
         />
       </Stack.Navigator>
 
