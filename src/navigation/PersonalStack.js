@@ -26,6 +26,7 @@ const PersonalStack = () => {
             headerTitleAlign:"center",
             headerStyle:{
                 backgroundColor:"#FFF1CD",
+                height:"60px",
             },
             headerShadowVisible:{
                 shadowColor: "#000",
@@ -34,7 +35,7 @@ const PersonalStack = () => {
                 elevation: 5, // Android Only
             },
             headerTitleStyle: {
-              fontSize:40,
+              fontSize:20,
             },
           }}
         />

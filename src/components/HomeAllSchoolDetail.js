@@ -15,7 +15,6 @@ var st=[
   require('../images/computer_icon.png'),
 ];
 const HomeAllSchoolDetail =({ album, navigation}) => {
-  //  let { album } = props;
   
    return (
       <Box bg="white">
