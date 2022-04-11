@@ -15,6 +15,7 @@ import HomeDetailScreen from '../screens/HomeDetailScreen';
 import HomeStack from "./HomeStack";
 import HomeTraceStack from "./HomeTraceStack";
 import PersonalStack from "./PersonalStack";
+import ExploreTabs from "./ExploreTabs";
 
 const BigTabs = () => {
   return (
@@ -70,7 +71,7 @@ const BigTabs = () => {
       />
         <Tab.Screen 
         name="Explore" 
-        component={HomeStack} 
+        component={ExploreTabs} 
         options={{
           title: "Explore",
           tabBarBadge:"7",
