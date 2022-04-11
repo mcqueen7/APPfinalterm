@@ -18,17 +18,17 @@ const renderItem = ({item,section}) => {
     if(section.title=="personal")return null;
        return (
             <>
-                    <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}>
-                    <FlatList
-                        scrollEnabled={false}
-                        numColumns={2}
-                        data={item.data}
-                        renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
-                        showsHorizontalScrollIndicator={false}
-                        stickySectionHeadersEnabled={false}
-                        keyExtractor={ (item,index) => item + index}
-                    />
-                    </Pressable>
+                <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}>
+                <FlatList
+                    scrollEnabled={false}
+                    numColumns={2}
+                    data={item.data}
+                    renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
+                    showsHorizontalScrollIndicator={false}
+                    stickySectionHeadersEnabled={false}
+                    keyExtractor={ (item,index) => item + index}
+                />
+                </Pressable>
             </>
        )
    
