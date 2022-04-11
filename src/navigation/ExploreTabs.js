@@ -10,6 +10,8 @@ import {Box,Center,HStack,Text} from "native-base"
 
 
 import Grade1Stack from "./Grade1Stack";
+import Grade2Stack from "./Grade1Stack";
+import Grade3Stack from "./Grade1Stack";
 
 const Tab2 =  createMaterialTopTabNavigator();
 
@@ -34,6 +36,7 @@ const ExploreTabs = () => {
           width:80,
           height:7,
           left:"7%",
+          borderRadius:5,
           // flex:1,
           // alignContent:"center",
           // justifyContent:"center",
@@ -49,7 +52,7 @@ const ExploreTabs = () => {
       }}
       >
       <Tab2.Screen 
-        name="Gradeone" 
+        name="Grade1" 
         component={Grade1Stack} 
         options={{
           title: "高一",
@@ -57,14 +60,14 @@ const ExploreTabs = () => {
         }}
       />
       <Tab2.Screen 
-        name="Gradetwo" 
+        name="Grade2" 
         component={Grade2Stack}
         options={{
           title: "高二",
         }}
       />
       <Tab2.Screen 
-        name="Gradethree" 
+        name="Grade3" 
         component={Grade3Stack} 
         options={{
           title: "高三",
