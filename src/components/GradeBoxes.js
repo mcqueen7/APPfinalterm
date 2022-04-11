@@ -7,10 +7,12 @@ import { ImageBackground } from "react-native";
 const GradeBoxes = ({boxdata,navigation}) => {
     return( 
         <Pressable onPress={()=>alert("做不完了沒Detail")}>
-        <Center mt="20px" w="80px" mr="10px" ml="10px"h="80px" bgColor="#92AFEC"  borderRadius={12} 
+        <Center mt="20px" w="160px" mx="12px" h="160px" bgColor="#92AFEC"  borderRadius={12} 
             shadow={7}>
-            <ImageBackground source={boxdata.image} resizeMode="cover" style={styles.bg}>
-              <Text textAlign={"center"} fontSize={12} backgroundColor={"amber.400"} borderRadius={5}>{boxdata.label}</Text>
+            <ImageBackground source={{uri:boxdata.image}} resizeMode="cover" style={styles.bg} >
+              <Center mt="100px" w="130" h="30px" backgroundColor={"#FFF1CD"} borderRadius={15} >
+                <Text textAlign={"center"} fontSize={12} >{boxdata.label}</Text>
+              </Center>
             </ImageBackground>
         </Center>
         </Pressable>
@@ -21,9 +23,10 @@ const styles = StyleSheet.create({
     bg: {
       flex: 1,
       justifyContent: "center",
-      alignContent:"center",
+      alignItems:"center",
       width:"100%",
       height:"100%",
+      
     },
   });
 

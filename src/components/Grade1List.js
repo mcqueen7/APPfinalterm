@@ -22,7 +22,7 @@ const Grade1List = (navigation) => {
                         renderItem={({ item }) => <GradeCompletion comdata={item} navigation={navigation}/>}
                         showsHorizontalScrollIndicator={false}
                         stickySectionHeadersEnabled={false}
-                        keyExtractor={ item => item.title}
+                        keyExtractor={ (item ,index)=> item.title+index}
                     />
                     </>
                 </>
@@ -30,16 +30,15 @@ const Grade1List = (navigation) => {
         }
         else return (
         <>
-            <Heading fontSize="24" mr="230px" mt="20px">{section.title}</Heading>
+            <Heading fontSize="24" ml="5px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
-                scrollEnabled={false}
-                numColumns={4}
+                horizontal={true}
                 data={section.data}
                 renderItem={({ item }) => <GradeBoxes boxdata={item} navigation={navigation}/>}
                 showsHorizontalScrollIndicator={false}
                 stickySectionHeadersEnabled={false}
-                keyExtractor={ item => item.title}
+                keyExtractor={ (item ,index)=> item.title+index}
             />
             </>
         </>
