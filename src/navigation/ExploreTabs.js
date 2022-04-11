@@ -8,11 +8,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,Center,HStack,Text} from "native-base"
 
+
+import Grade1Stack from "./Grade1Stack";
+
 const Tab2 =  createMaterialTopTabNavigator();
 
-import HomeTraceStack from "./HomeTraceStack";
-import HomeAllStack from "./HomeAllStack";
-import HomeRecommendStack from "./HomeRecommendStack";
+
 
 
 const ExploreTabs = () => {
@@ -49,7 +50,7 @@ const ExploreTabs = () => {
       >
       <Tab2.Screen 
         name="Gradeone" 
-        component={GradeoneStack} 
+        component={Grade1Stack} 
         options={{
           title: "高一",
           
@@ -57,14 +58,14 @@ const ExploreTabs = () => {
       />
       <Tab2.Screen 
         name="Gradetwo" 
-        component={GradetwoStack}
+        component={Grade2Stack}
         options={{
           title: "高二",
         }}
       />
       <Tab2.Screen 
         name="Gradethree" 
-        component={GradethreeStack} 
+        component={Grade3Stack} 
         options={{
           title: "高三",
         }}
