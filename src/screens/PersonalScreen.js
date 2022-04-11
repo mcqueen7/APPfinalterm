@@ -6,9 +6,6 @@ import sections from '../json/personal_section.json';
 import PersonalFile from "../components/PersonalFile";
 import PersonalButton from "../components/PersonalButton";
 
-
-console.log(sections[1].data);
-
 const renderSectionHeader = ({section,navigation}) => {
     if(section.title=="options")return (
         <Box w="100%" alignItems={"center"}>
