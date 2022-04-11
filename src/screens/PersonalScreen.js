@@ -7,11 +7,12 @@ import PersonalFile from "../components/PersonalFile";
 import PersonalButton from "../components/PersonalButton";
 
 
-console.log(sections[0]);
+console.log(sections[1].data);
 
 const renderSectionHeader = ({section,navigation}) => {
     if(section.title=="options")return null;
-    return <PersonalFile personaldata={section.data} navigation={navigation}/> 
+    return <PersonalFile personaldata={section.data[0]} navigation={navigation}/> 
+    // return <Text>{section.title}</Text>
   };
 const renderItem = ({item,section}) => {
     if(section.title=="personal")return null;
