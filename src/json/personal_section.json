@@ -27,7 +27,7 @@
             },
             {
                 "label":"個人資料",
-                "icon":"account-details-outline"
+                "icon":"account-edit-outline"
             },
             {
                 "label":"亮暗模式",
