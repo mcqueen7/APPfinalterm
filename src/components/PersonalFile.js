@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const PersonalFile = ({ personaldata,navigation }) => {
 
   return (
-       <Box bgColor={"#FFF5DB"} w="100%" h="370px" alignItems={"center"} borderBottomLeftRadius={30} borderBottomRightRadius={30}>
+       <Box bgColor={"#FFF5DB"} w="100%" h="370px" alignItems={"center"} borderBottomLeftRadius={30} borderBottomRightRadius={30} mb="30px">
         <Image mt={2} source={{uri:personaldata.headimg}} alt={`${personaldata.name}的照片`} size={"120px"}/>
         <Text fontSize={20} fontWeight={"bold"} mt={"2"}>{personaldata.name}</Text>
         <Text fontSize={16}>{personaldata.school}</Text>

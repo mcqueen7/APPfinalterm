@@ -10,26 +10,26 @@ import PersonalButton from "../components/PersonalButton";
 console.log(sections[1].data);
 
 const renderSectionHeader = ({section,navigation}) => {
-    if(section.title=="options")return null;
-    return <PersonalFile personaldata={section.data[0]} navigation={navigation}/> 
+    if(section.title=="options")return (
+        <Box w="100%" alignItems={"center"}>
+        <FlatList
+            scrollEnabled={false}
+            numColumns={2}
+            data={section.data}
+            renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
+            showsHorizontalScrollIndicator={false}
+            stickySectionHeadersEnabled={false}
+            keyExtractor={ (item,index) => item + index}
+        />
+        </Box>
+    );
+    else return <PersonalFile personaldata={section.data[0]} navigation={navigation}/> 
     // return <Text>{section.title}</Text>
   };
-const renderItem = ({item,section}) => {
+const renderItem = ({item,section,navigation}) => {
     if(section.title=="personal")return null;
        return (
-            <>
-                <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}>
-                <FlatList
-                    scrollEnabled={false}
-                    numColumns={2}
-                    data={item.data}
-                    renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
-                    showsHorizontalScrollIndicator={false}
-                    stickySectionHeadersEnabled={false}
-                    keyExtractor={ (item,index) => item + index}
-                />
-                </Pressable>
-            </>
+           null
        )
    
   };

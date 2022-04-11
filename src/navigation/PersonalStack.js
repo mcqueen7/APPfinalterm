@@ -9,6 +9,7 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
 import HomeTabs from "./HomeTabs";
 import PersonalScreen from "../screens/PersonalScreen";
+
 const Stack = createNativeStackNavigator(); 
 
 const PersonalStack = () => {
