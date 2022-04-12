@@ -53,7 +53,7 @@ const SearchSection = ({ navigation }) => {
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://docs.nativebase.io/_next/image?url=https%3A%2F%2Fdocs.nativebase.io%2Fimg%2Fnativebaselogo.svg&w=48&q=100"}}width={8} height={8}/>
+        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">選校</Text>
@@ -78,7 +78,7 @@ const SearchSection = ({ navigation }) => {
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://docs.nativebase.io/_next/image?url=https%3A%2F%2Fdocs.nativebase.io%2Fimg%2Fnativebaselogo.svg&w=48&q=100"}}width={8} height={8}/>
+        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">志願選填</Text>
@@ -102,7 +102,7 @@ const SearchSection = ({ navigation }) => {
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://docs.nativebase.io/_next/image?url=https%3A%2F%2Fdocs.nativebase.io%2Fimg%2Fnativebaselogo.svg&w=48&q=100"}}width={8} height={8}/>
+        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">高職升學</Text>
