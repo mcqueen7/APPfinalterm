@@ -30,27 +30,27 @@
          },
          {
             "title":"藝術",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/art.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/art_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"管理",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"財經",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/economic.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/economic_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"教育",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/eduvation.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/education_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"外語",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/language.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/language_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          }
       ]
@@ -76,27 +76,27 @@
          },
          {
             "title":"藝術",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/art.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/art_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"管理",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"財經",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/economic.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/economic_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"教育",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/eduvation.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/education_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          },
          {
             "title":"外語",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/language.png?raw=true",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/language_icon.png?raw=true",
             "url":"https://www.youtube.com/channel/UCff5b9cYW4VpVRTmKGEMXUQ?view_as=subscriber"
          }
       ]
