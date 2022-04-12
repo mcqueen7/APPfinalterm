@@ -8,7 +8,7 @@ import GradeBoxes from "./GradeBoxes";
 
 
 // console.log(sections);
-
+//sadhasjkl
 const Grade1List = (navigation) => {
     const renderSectionHeader = ({section}) => {
         if(section.title=="completion")  { 
@@ -22,7 +22,7 @@ const Grade1List = (navigation) => {
                         renderItem={({ item }) => <GradeCompletion comdata={item} navigation={navigation}/>}
                         showsHorizontalScrollIndicator={false}
                         stickySectionHeadersEnabled={false}
-                        keyExtractor={ (item ,index)=> item.title+index}
+                        keyExtractor={ (item ,index)=>item+index}
                     />
                     </>
                 </>
@@ -33,12 +33,13 @@ const Grade1List = (navigation) => {
             <Heading fontSize="24" ml="5px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
+                height={200}
                 horizontal={true}
                 data={section.data}
                 renderItem={({ item }) => <GradeBoxes boxdata={item} navigation={navigation}/>}
                 showsHorizontalScrollIndicator={false}
                 stickySectionHeadersEnabled={false}
-                keyExtractor={ (item ,index)=> item.title+index}
+                keyExtractor={ (item)=> item.label}
             />
             </>
         </>
@@ -56,17 +57,12 @@ const Grade1List = (navigation) => {
         stickySectionHeadersEnabled={false}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
-        keyExtractor={(item,index) => item + index} 
+        keyExtractor={(item,index) => item+index} 
         renderSectionHeader={renderSectionHeader} 
         renderItem={renderItem} 
         />
   );
 };
-const styles = StyleSheet.create({
-  sectionHeader: { 
-    paddingTop: 16,
-    paddingBottom: 16,
-  },
-})
+
 
 export default Grade1List;
