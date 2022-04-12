@@ -38,7 +38,7 @@ const PersonalScreen = ({ navigation }) => {
             margin={0}
             width="420px"
             sections={sections} 
-            contentContainerStyle={{ paddingHorizontal: 14 }}
+            contentContainerStyle={{ paddingHorizontal: 0 }}
             stickySectionHeadersEnabled={false}
             showsVerticalScrollIndicator={false}
             showsHorizontalScrollIndicator={false}
