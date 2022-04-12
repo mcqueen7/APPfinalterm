@@ -16,6 +16,8 @@ import HomeStack from "./HomeStack";
 import HomeTraceStack from "./HomeTraceStack";
 import PersonalStack from "./PersonalStack";
 import ExploreTabs from "./ExploreTabs";
+import SearchScreen from "../screens/SearchScreen";
+
 
 const BigTabs = () => {
   return (
@@ -42,10 +44,10 @@ const BigTabs = () => {
         }}
       />
       <Tab.Screen 
-        name="Wishlist" 
-        component={HomeDetailScreen} 
+        name="Search" 
+        component={SearchScreen} 
         options={{
-          title: "Wishlist",
+          title: "Search",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="magnify" color={color} size={30} />
           ),
