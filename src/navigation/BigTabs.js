@@ -18,6 +18,8 @@ import PersonalStack from "./PersonalStack";
 import ExploreTabs from "./ExploreTabs";
 import SearchScreen from "../screens/SearchScreen";
 import { SafeAreaView } from "react-native-safe-area-context";
+import DisplaySettingScreen from '../screens/DisplaySettingScreen';
+import SettingsScreen from '../screens/SettingsScreen';
 
 
 const BigTabs = () => {
@@ -96,6 +98,73 @@ const BigTabs = () => {
       />
     </Tab.Navigator>
     
+  );
+}
+const SettingsStack = ({ navigation }) => {
+  const { colorMode } = useColorMode();
+
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{
+          title: "Settings",
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+          },
+          headerTitleStyle: {
+            color: colorMode == 'light' ? 'black' : 'white',
+            fontWeight: '400',
+            fontSize: 20
+          },
+          headerLeft: () => (
+            Platform.OS == 'ios' ?
+              <></> :
+              <MaterialCommunityIcons
+                name={'menu'}
+                color={colorMode == 'light' ? 'black' : 'white'}
+                size={20}
+                onPress={() => navigation.openDrawer()}
+                style={{ marginRight: 20 }}
+              />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="DisplaySetting"
+        component={DisplaySettingScreen}
+        options={{
+          title: "Display",
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+          },
+          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerTitleStyle: {
+            color: colorMode == 'light' ? 'black' : 'white',
+            fontWeight: '400',
+            fontSize: 20
+          },
+        }}
+      />
+      <Stack.Screen
+        name="AccountSetting"
+        component={AccountSettingScreen}
+        options={{
+          title: "Account",
+          headerStyle: {
+            backgroundColor: colorMode == 'light' ? 'white' : 'black',
+          },
+          headerTintColor: colorMode == 'light' ? 'black' : 'white',
+          headerTitleStyle: {
+            color: colorMode == 'light' ? 'black' : 'white',
+            fontWeight: '400',
+            fontSize: 20
+          },
+        }}
+      />
+
+    </Stack.Navigator>
   );
 }
 
