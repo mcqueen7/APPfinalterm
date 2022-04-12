@@ -20,7 +20,7 @@ const SearchDetail = ({ album, navigation }) => {
             <Image  
               borderRadius="12"
               source={{ uri: album.image }}
-              alt="album"
+              alt={album.title}
             />            
           </AspectRatio>
         </Pressable>

@@ -26,9 +26,11 @@ const ExploreTabs = () => {
     <SafeAreaProvider>
       <Tab2.Navigator
       initialRouteName="Grade1"
+      
       screenOptions={{  
         tabBarActiveTintColor :"#3B5998",
         tabBarBounces:"true",
+        swipeEnabled:false,
         tabBarIndicatorStyle:{
           width:80,
           height:7,
@@ -42,7 +44,6 @@ const ExploreTabs = () => {
         },
         tabBarLabelStyle: { 
           fontSize: 20,
-
         },
         tabBarStyle:{
           backgroundColor:"#ffffff",
