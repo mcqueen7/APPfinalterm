@@ -17,6 +17,7 @@ import HomeTraceStack from "./HomeTraceStack";
 import PersonalStack from "./PersonalStack";
 import ExploreTabs from "./ExploreTabs";
 import SearchScreen from "../screens/SearchScreen";
+import { SafeAreaView } from "react-native-safe-area-context";
 import DisplaySettingScreen from '../screens/DisplaySettingScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -96,6 +97,7 @@ const BigTabs = () => {
         }}
       />
     </Tab.Navigator>
+    
   );
 }
 const SettingsStack = ({ navigation }) => {
