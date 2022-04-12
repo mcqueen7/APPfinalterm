@@ -8,7 +8,7 @@ const SearchDetail = ({ album, navigation }) => {
       marginX={1} marginBottom={2} borderRadius={12} shadow={2} marginTop={2}
       _dark={{ borderColor: 'blueGray.500', borderWidth: 0.6 }}
     >
-      
+
       <Box p={1}
         _dark={{ bg: "blueGray.900" }}
         _light={{ bg: "blueGray.50" }}

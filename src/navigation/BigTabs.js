@@ -20,14 +20,15 @@ import SearchScreen from "../screens/SearchScreen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import DisplaySettingScreen from '../screens/DisplaySettingScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-
+import NullScreen from "../screens/NullScreen";
+import ActionButton from "../components/ActionButton";
 
 const BigTabs = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        // tabBarActiveTintColor: '#3B5998',
+         tabBarActiveTintColor: '#3B5998',
         lazy:true,
         headerShown:false,
       }}
@@ -59,18 +60,12 @@ const BigTabs = () => {
       />
       <Tab.Screen 
         name="Create" 
-        component={HomeTraceStack} 
+        component={NullScreen} 
         options={{
           title: "Create",
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="plus-circle" color={color} size={30} />
+          tabBarIcon: ({ color }) => ( <ActionButton />
+            
           ),
-          // tabBarOptions: {
-          //   iconStyle: {
-          //     width: 1000,
-          //     height: 1000,
-          //   },
-          // },
           tabBarColor:"#4666b3",
         }}
       />
