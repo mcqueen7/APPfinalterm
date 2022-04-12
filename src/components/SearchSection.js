@@ -23,13 +23,13 @@ const SearchSection = ({ navigation }) => {
         <VStack>
         <HStack>
           <Image 
-          w='100%' h='200' mb={3}
+          w='100%' h='200' mb={3} 
           source={
             {
                uri:
                "https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             }
-          }
+          } 
           />
         </HStack>
         <Box>
@@ -70,7 +70,7 @@ const SearchSection = ({ navigation }) => {
         navigation={navigation}
       />
       </Box>
-      
+
       
       <Box  mb={2} w="100%" 
         _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
