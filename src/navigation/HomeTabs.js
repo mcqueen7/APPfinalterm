@@ -29,7 +29,7 @@ const HomeTabs = () => {
           height:7,
           left:"7%",
           borderRadius:5,
-          backgroundColor:colorMode=="light"?"#000000":"#FFF1CD",
+          backgroundColor:colorMode=="light"?"#477CEA":"#FFF1CD",
         },
         tabBarLabelStyle: { 
           fontSize: 16,
