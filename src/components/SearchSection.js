@@ -1,125 +1,95 @@
 import React from "react";
-import { Box,HStack,Text,VStack,ScrollView,Center,Image,Button,SafeAreaView} from "native-base";
-import SearchList from "../components/SearchList";
-import GuessList from "../components/GuessList";
-import popData1 from "../json/search_section.json";
-import popData2 from "../json/aspiration_fill.json";
-import popData3 from "../json/vocational_school.json";
-import guessData from "../json/guess.json";
+import { Box,HStack,Text,VStack,ScrollView,Center,Image,Button,SafeAreaView, SectionList, Heading, Pressable, FlatList} from "native-base";
+
+import GuessBoxes from "./GuessBoxes";
 import SearchBar from "../components/SearchBar";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import sections from "../json/search_section.json"
+import SearchBoxes from "./SearchBoxes";
+
+console.log(sections[0].title);
 
 const SearchSection = ({ navigation }) => {
-  return (
-    <ScrollView  showsVerticalScrollIndicator={false}>
-    <Box>
-      <Center flex={1} px="2">
-        <SearchBar />
-      </Center>
-    
-      <Box my={3}>
-        <VStack>
-        <HStack>
-          <Image 
-          w='100%' h='200' mb={3} 
-          alt="123"
-          source={
-            {
-               uri:
-               "https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            }
-          } 
+ 
+  const renderSectionHeader = ({section}) => {
+    switch (section.title){
+      case "搜尋": return <Center flex={1} px="2"><SearchBar /></Center>
+      case "carousel": return (
+        <Image 
+        w='100%' h='200' alt="carousel"
+        source={{
+             uri:
+             "https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        }} 
+        />
+      )
+      case "猜你喜歡": return (
+          <>
+              <HStack mx={5} my={10} ><Heading fontSize="24" >{section.title}</Heading>
+              </HStack>
+              <>
+              <FlatList
+                  scrollEnabled={false}
+                  numColumns={4}
+                  // horizontal={true}
+                  data={section.data}
+                  renderItem={({ item }) => <GuessBoxes boxdata={item} navigation={navigation}/>}
+                  showsHorizontalScrollIndicator={false}
+                  stickySectionHeadersEnabled={false}
+                  keyExtractor={ item => item.label}
+                  alignItems={"center"}
+              />
+              </>
+          </>
+      )
+      default: return (
+        <>
+          <HStack px={3} mt="10px" mb={2}justifyContent="space-between" alignItems="center">
+          <HStack>
+            <VStack paddingLeft={2} justifyContent="space-around">
+              <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
+            </VStack>  
+            <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
+              <Text bold fontSize="lg">{section.title}</Text>
+              <Text>{section.subtitle}</Text>
+            </VStack>
+          </HStack>
+            
+          <Button onPress={() => console.log("87")} bgColor={"#477CEA"} h={"40px"}>{`${section.article_num}  ▶`}</Button>
+          </HStack>
+          <>
+          <FlatList
+              horizontal={true}
+              data={section.data}
+              renderItem={({ item }) => <SearchBoxes boxdata={item} navigation={navigation}/>}
+              showsHorizontalScrollIndicator={false}
+              stickySectionHeadersEnabled={false}
+              keyExtractor={ item => item.image}
           />
-        </HStack>
-        <Box>
-        <HStack  ml={3} mb={4} my={3}>
-          <Text fontSize="lg" fontWeight="bold"> 猜你喜歡</Text>
-        </HStack>
-        </Box>
-       
-        <HStack>
-        <GuessList 
-        list={guessData.albumList}
-        navigation={navigation}
-      />
-        </HStack>
-        </VStack>
+          </>
+        </>
+      )
 
-      </Box>
-      <Box  mb={2} w="100%" 
-        _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
-        _light={{ bg: "blueGray.50" }}>
-      <HStack mt={2} px={3}>
-       <VStack paddingLeft={2} justifyContent="space-around">
-         <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
-       </VStack>  
-       <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
-          <Text bold fontSize="lg">選校</Text>
-          <Text>熱門話題</Text>
-       </VStack>
-       <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
-       <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.3k ▶ </Button>
-       </VStack>
-       </HStack>
-     
-      </HStack>
-      <SearchList 
-        list={popData1.albumList}
-        navigation={navigation}
-      />
-      </Box>
-      
-      <Box mb={2} w="100%" 
-        _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
-        _light={{ bg: "blueGray.50" }}>
-      <HStack mt={2} px={3}>
-       <VStack paddingLeft={2} justifyContent="space-around">
-       <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
-       </VStack>  
-       <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
-          <Text bold fontSize="lg">志願選填</Text>
-          <Text>熱門話題</Text>
-       </VStack>
-       <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
-       <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.2k ▶ </Button>
-       </VStack>
-       </HStack>
-     
-      </HStack>
-      <SearchList 
-        list={popData2.albumList}
-        navigation={navigation}
-      />
-      </Box>
-
-      <Box  mb={2} w="100%" 
-        _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
-        _light={{ bg: "blueGray.50" }}>
-      <HStack mt={2} px={3}>
-       <VStack paddingLeft={2} justifyContent="space-around">
-       <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
-       </VStack>  
-       <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
-          <Text bold fontSize="lg">高職升學</Text>
-          <Text>熱門話題</Text>
-       </VStack>
-       <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
-       <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.0k ▶ </Button>
-       </VStack>
-       </HStack>
-     
-      </HStack>
-      <SearchList 
-        list={popData3.albumList}
-        navigation={navigation}
-      />
-      </Box>
-    </Box>
-    </ScrollView>
+    } 
+  };
+  const renderItem = ({item,section}) => {
+   return null
    
+  };
+
+  return (
+    
+   <SectionList w="100%"  h="100%"  bgColor={"white"}
+   sections={sections} 
+   contentContainerStyle={{ paddingHorizontal: 7 }}
+   stickySectionHeadersEnabled={false}
+   showsVerticalScrollIndicator={false}
+   showsHorizontalScrollIndicator={false}
+   keyExtractor={(item,index) => item+index} 
+   renderSectionHeader={renderSectionHeader} 
+   renderItem={renderItem} 
+   />
+ 
   );
 };
 

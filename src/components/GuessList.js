@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList } from "native-base";
-import GuessDetail from "./GuessDetail";
+import GuessDetail from "./GuessBoxes";
 
 const GuessList = ({ list, navigation }) => {
   const renderItem = ({ item }) => <GuessDetail album={item} navigation={navigation} />;
