@@ -11,7 +11,7 @@ console.log(sections[0].title);
 
 const SearchSection = ({ navigation }) => {
   const BGColor=useColorModeValue("#FFFFFF","#000000");
- 
+  const hashtag=useColorModeValue("#000000","#FFFFFF");
   const renderSectionHeader = ({section}) => {
     switch (section.title){
       case "搜尋": return <Center flex={1} px="2"><SearchBar /></Center>
@@ -48,7 +48,7 @@ const SearchSection = ({ navigation }) => {
           <HStack px={3} mt="10px" mb={2}justifyContent="space-between" alignItems="center">
           <HStack>
             <VStack paddingLeft={2} justifyContent="space-around">
-              <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
+              <Center padding={2} borderWidth={2} borderColor={hashtag} borderRadius={100}><MaterialCommunityIcons name="pound" color={hashtag} size={25} /></Center>
             </VStack>  
             <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
               <Text bold fontSize="lg">{section.title}</Text>
