@@ -12,6 +12,7 @@ console.log(sections[0].title);
 const SearchSection = ({ navigation }) => {
   const BGColor=useColorModeValue("#FFFFFF","#000000");
   const hashtag=useColorModeValue("#000000","#FFFFFF");
+  const numButton=useColorModeValue("#477CEA","#EEEEEE");
   const renderSectionHeader = ({section}) => {
     switch (section.title){
       case "搜尋": return <Center flex={1} px="2"><SearchBar /></Center>
@@ -56,7 +57,7 @@ const SearchSection = ({ navigation }) => {
             </VStack>
           </HStack>
             
-          <Button onPress={() => console.log("87")} bgColor={"#477CEA"} h={"40px"}>{`${section.article_num}  ▶`}</Button>
+          <Button onPress={() => console.log("87")} bgColor={numButton} h={"40px"}>{`${section.article_num}  ▶`}</Button>
           </HStack>
           <>
           <FlatList
