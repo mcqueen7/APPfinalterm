@@ -17,6 +17,7 @@ const Grade1List = (navigation) => {
                     <>
                     <FlatList
                         scrollEnabled={false}
+                        alignItems={"center"}
                         numColumns={4}
                         data={section.data}
                         renderItem={({ item }) => <GradeCompletion comdata={item} navigation={navigation}/>}
@@ -30,7 +31,7 @@ const Grade1List = (navigation) => {
         }
         else return (
         <>
-            <Heading fontSize="24" ml="5px" mt="30px">{section.title}</Heading>
+            <Heading fontSize="24" ml="30px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
                 height={200}
@@ -53,7 +54,7 @@ const Grade1List = (navigation) => {
   return (
     <SectionList w="100%"  h="100%"  bgColor={"white"}
         sections={sections} 
-        contentContainerStyle={{ paddingHorizontal: 7 }}
+        contentContainerStyle={{ paddingHorizontal: 2 }}
         stickySectionHeadersEnabled={false}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}

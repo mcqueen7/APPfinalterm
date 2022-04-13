@@ -6,13 +6,13 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
+import {Box,HStack,Text,Center} from "native-base"
 
 const HomeRecommendStack = () => {
     return (
-      <Box>
-        <Text>RE</Text>
-      </Box>
+    <Center h="100%" bgColor={"blue.100"}>
+      <Text fontSize={100} textAlign={"center"}>Recommend PAGE</Text>
+    </Center>
     );
   }
 export default HomeRecommendStack;

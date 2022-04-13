@@ -26,6 +26,7 @@ const HomeAllList = (navigation) => {
                     <>
                     <FlatList
                         scrollEnabled={false}
+                        alignItems={"center"}
                         numColumns={4}
                         data={section.data}
                         renderItem={({ item }) => <Home8Boxes1 boxdata={item} navigation={navigation}/>}
@@ -44,6 +45,7 @@ const HomeAllList = (navigation) => {
                     <>
                     <FlatList
                         scrollEnabled={false}
+                        alignItems={"center"}
                         numColumns={4}
                         data={section.data}
                         renderItem={({ item }) => <Home8Boxes2 boxdata={item} navigation={navigation}/>}
