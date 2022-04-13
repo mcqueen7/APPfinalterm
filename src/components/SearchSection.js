@@ -7,19 +7,17 @@ import popData2 from "../json/aspiration_fill.json";
 import popData3 from "../json/vocational_school.json";
 import guessData from "../json/guess.json";
 import SearchBar from "../components/SearchBar";
-
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const SearchSection = ({ navigation }) => {
   return (
-  
     <ScrollView  showsVerticalScrollIndicator={false}>
     <Box>
-          <Center flex={1} px="2">
-      <SearchBar />
-    </Center>
+      <Center flex={1} px="2">
+        <SearchBar />
+      </Center>
     
-      <Box my={3}
-      >
+      <Box my={3}>
         <VStack>
         <HStack>
           <Image 
@@ -46,14 +44,14 @@ const SearchSection = ({ navigation }) => {
       />
         </HStack>
         </VStack>
-  
+
       </Box>
       <Box  mb={2} w="100%" 
         _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
+         <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">選校</Text>
@@ -71,14 +69,13 @@ const SearchSection = ({ navigation }) => {
         navigation={navigation}
       />
       </Box>
-
       
-      <Box  mb={2} w="100%" 
+      <Box mb={2} w="100%" 
         _dark={{ bg: "blueGray.900", borderColor: 'blueGray.500', borderWidth: 0.6 }}
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
+       <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">志願選填</Text>
@@ -102,7 +99,7 @@ const SearchSection = ({ navigation }) => {
         _light={{ bg: "blueGray.50" }}>
       <HStack mt={2} px={3}>
        <VStack paddingLeft={2} justifyContent="space-around">
-        <Image alt="123" source={{uri:"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/management_icon.png?raw=true"}}width={8} height={8}/>
+       <Center padding={2} borderWidth={2} borderColor={"black"} borderRadius={100}><MaterialCommunityIcons name="pound" color="black" size={25} /></Center>
        </VStack>  
        <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
           <Text bold fontSize="lg">高職升學</Text>
