@@ -6,11 +6,10 @@ import sections from "../json/grade1_section.json";
 import GradeCompletion from "./GradeCompletion";
 import GradeBoxes from "./GradeBoxes";
 
-
 // console.log(sections);
 //sadhasjkl
-const Grade1List = (navigation) => {
-    const renderSectionHeader = ({section}) => {
+const Grade1List = (navigation) => {     
+    const renderSectionHeader = ({section}) => {   
         if(section.title=="completion")  { 
             return (
                 <>
@@ -31,7 +30,7 @@ const Grade1List = (navigation) => {
         }
         else return (
         <>
-            <Heading fontSize="24" ml="30px" mt="30px">{section.title}</Heading>
+            <Heading  fontSize="24" ml="30px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
                 height={200}
