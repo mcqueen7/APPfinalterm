@@ -1,5 +1,5 @@
 import React from "react";
-import { Box,Text,HStack, FlatList, Center, Image, Button, Icon,SectionList,Pressable} from "native-base";
+import { Box,Text,HStack, FlatList, Center, Image, Button, Icon,SectionList,Pressable, useColorModeValue} from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import sections from '../json/personal_section.json';
@@ -30,6 +30,7 @@ const renderItem = ({item,section,navigation}) => {
    
   };
 const PersonalScreen = ({ navigation }) => {
+    const BGcolor=useColorModeValue("#FFFFFF","#000000");
     return ( 
      <Box bgColor={"white"} w="100%" h="100%">
         <SectionList
@@ -44,6 +45,7 @@ const PersonalScreen = ({ navigation }) => {
             keyExtractor={(item,index) => item + index} 
             renderSectionHeader={renderSectionHeader} 
             renderItem={renderItem} 
+            backgroundColor={BGcolor}
         />
     </Box>
   );

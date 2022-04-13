@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,Center,HStack,StatusBar,Text} from "native-base"
+import {Box,Center,HStack,StatusBar,Text, useColorMode} from "native-base"
 
 
 import Grade1Stack from "./Grade1Stack";
@@ -17,10 +17,8 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 const Tab2 =  createMaterialTopTabNavigator();
 
-
-
-
 const ExploreTabs = () => {
+  const{colorMode}=useColorMode();
   return (
   
     <SafeAreaProvider>
@@ -28,7 +26,8 @@ const ExploreTabs = () => {
       initialRouteName="Grade1"
       
       screenOptions={{  
-        tabBarActiveTintColor :"#3B5998",
+        tabBarInactiveTintColor:colorMode=="light"?"#868686":"#E8E8E8",
+        tabBarActiveTintColor:colorMode=="light"?"#477CEA":"#FFF1CD",
         tabBarBounces:"true",
         swipeEnabled:false,
         tabBarIndicatorStyle:{
@@ -36,17 +35,13 @@ const ExploreTabs = () => {
           height:7,
           left:"7%",
           borderRadius:5,
-          // flex:1,
-          // alignContent:"center",
-          // justifyContent:"center",
-          // textAlign:"center",
-          // marginLeft:50,
+          backgroundColor:colorMode=="light"?"#000000":"#FFF1CD",
         },
         tabBarLabelStyle: { 
           fontSize: 20,
         },
         tabBarStyle:{
-          backgroundColor:"#ffffff",
+          backgroundColor:colorMode=="light"?"#ffffff":"#474747",
           height:70,
           paddingTop:10,
         },

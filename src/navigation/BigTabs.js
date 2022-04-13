@@ -67,8 +67,7 @@ const BigTabs = () => {
         component={NullScreen} 
         options={{
           title: "Create",
-          tabBarIcon: ({ color }) => ( <ActionButton />
-            
+          tabBarIcon: () => ( <ActionButton />
           ),
           tabBarColor:"#4666b3", //for material
         }}
