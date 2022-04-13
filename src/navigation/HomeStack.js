@@ -30,7 +30,7 @@ const HomeStack = () => {
             headerStyle:{
               elevation: 0, // remove shadow on Android
               shadowOpacity: 0, // remove shadow on iOS
-              backgroundColor:"#fff",
+              backgroundColor:colorMode=="light"?"#FFFFFF":"#474747",
             //   shadowOffset:0,
             },
             // headerBackground: colorMode=="light"?"#FFFFFF":"#000000",

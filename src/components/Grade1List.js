@@ -1,14 +1,14 @@
 import React from "react";
 import {  StyleSheet } from "react-native";
-import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box, } from 'native-base';
+import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box, useColorModeValue, } from 'native-base';
 
 import sections from "../json/grade1_section.json";
 import GradeCompletion from "./GradeCompletion";
 import GradeBoxes from "./GradeBoxes";
 
-// console.log(sections);
-//sadhasjkl
-const Grade1List = (navigation) => {     
+
+const Grade1List = (navigation) => {   
+    const BGcolor=useColorModeValue("#FFFFFF","#313131");
     const renderSectionHeader = ({section}) => {   
         if(section.title=="completion")  { 
             return (
@@ -60,6 +60,7 @@ const Grade1List = (navigation) => {
         keyExtractor={(item,index) => item+index} 
         renderSectionHeader={renderSectionHeader} 
         renderItem={renderItem} 
+        backgroundColor={BGcolor}
         />
   );
 };

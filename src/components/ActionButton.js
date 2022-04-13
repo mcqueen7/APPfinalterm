@@ -1,20 +1,22 @@
 import React from 'react';
-import { Box, Pressable, Actionsheet, useDisclose,Text, HStack } from 'native-base';
+import { Box, Pressable, Actionsheet, useDisclose,Text, HStack, useColorModeValue } from 'native-base';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default () => {
   const { isOpen, onOpen, onClose } = useDisclose();
+  const BGcolor=useColorModeValue("#3B5998","#FFF1CD");
+  const plusColor=useColorModeValue("#FFFFFF","#000000");
   return (
     <>
       <Pressable
         onPress={onOpen}
         position="absolute" left={"50%"} right={"50%"} bottom={"5%"} ml={-25}
         width={50} height={50} borderRadius={300}
-        bg="#3B5998" shadow={2} justifyContent="center" alignItems="center" zIndex={99} 
+        bg={BGcolor} shadow={2} justifyContent="center" alignItems="center" zIndex={99} 
       >
         <Box>
-          <MaterialCommunityIcons name="plus" color="white" size={35} />
+          <MaterialCommunityIcons name="plus" color={plusColor} size={35} />
         </Box>
       </Pressable>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
