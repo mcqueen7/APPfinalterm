@@ -1,0 +1,2 @@
+//part 1 AVTIOn TYPE CONST DEF
+export const SET_COUNTER="SET_COUNTER";
