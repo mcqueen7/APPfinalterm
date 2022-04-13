@@ -6,17 +6,19 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
+import {Box,HStack,Text, useColorMode} from "native-base"
 import HomeTabs from "./HomeTabs";
 import PersonalScreen from "../screens/PersonalScreen";
 
 const Stack = createNativeStackNavigator(); 
 
 const PersonalStack = () => {
+    const{colorMode}=useColorMode();
     return (
       <Stack.Navigator
         initialRouteName="PersonalScreen"
         screenOptions={{
+
         }}
       >
         <Stack.Screen
@@ -26,7 +28,7 @@ const PersonalStack = () => {
             title: "個人",
             headerTitleAlign:"center",
             headerStyle:{
-                backgroundColor:"#FFF1CD",
+                backgroundColor:colorMode=="light"?"#FFF1CD":"#474747",
                 height:"60px",
             },
             headerShadowVisible:{
@@ -36,6 +38,7 @@ const PersonalStack = () => {
                 elevation: 5, // Android Only
             },
             headerTitleStyle: {
+              color:colorMode=="light"?"#000000":"#FFFFFF",
               fontSize:20,
             },
           }}
