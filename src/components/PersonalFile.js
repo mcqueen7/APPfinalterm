@@ -23,24 +23,24 @@ const PersonalFile = ({ personaldata,navigation }) => {
                 <Text fontSize={16}>被收藏數</Text>
             </Center>
         </HStack>
-        <Button mt={2} w="360" h={50} _light={{bgColor:"#477CEA"}} _dark={{bgColor:"#FFF5DB"}} borderRadius={"20px"} onPress={()=>alert("NO TIME")}>
+        <Button mt={2} w="360" h={50} _light={{bgColor:"#477CEA"}} _dark={{bgColor:"#FFF5F5"}} borderRadius={"20px"} onPress={()=>alert("NO TIME")}>
             <Text fontSize={16} _light={{color:"#ffffff"}} _dark={{color:"#000000"}}>我的學習歷程</Text>
         </Button>
         <HStack mt={5}>
             <Center mx={7}>
-                <MaterialCommunityIcons name="account-multiple-outline" size={25} />
+                <MaterialCommunityIcons name="account-multiple-outline" size={25}  />
                <Text fontSize={16}>好友</Text>
             </Center>
             <Center mx={7}>
-                <MaterialCommunityIcons name="account-group-outline" size={25} />
+                <MaterialCommunityIcons name="account-group-outline" size={25}  />
                 <Text fontSize={16}>社團</Text>
             </Center>
             <Center mx={7}>
-            <MaterialCommunityIcons name="message-text-outline" size={25} />
+            <MaterialCommunityIcons name="message-text-outline" size={25}  />
                 <Text fontSize={16}>聊天室</Text>
             </Center>
             <Center mx={7}>
-            <MaterialCommunityIcons name="gift-outline" size={25} />
+            <MaterialCommunityIcons name="gift-outline" size={25}  />
                 <Text fontSize={16}>禮物</Text>
             </Center>
         </HStack>
