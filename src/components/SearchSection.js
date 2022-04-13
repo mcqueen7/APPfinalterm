@@ -1,5 +1,5 @@
 import React from "react";
-import { Box,HStack,Text,VStack,ScrollView,Center,Image,Button,SafeAreaView, SectionList, Heading, Pressable, FlatList} from "native-base";
+import { Box,HStack,Text,VStack,ScrollView,Center,Image,Button,SafeAreaView, SectionList, Heading, Pressable, FlatList, useColorModeValue} from "native-base";
 
 import GuessBoxes from "./GuessBoxes";
 import SearchBar from "../components/SearchBar";
@@ -10,6 +10,7 @@ import SearchBoxes from "./SearchBoxes";
 console.log(sections[0].title);
 
 const SearchSection = ({ navigation }) => {
+  const BGColor=useColorModeValue("#FFFFFF","#000000");
  
   const renderSectionHeader = ({section}) => {
     switch (section.title){
@@ -89,6 +90,7 @@ const SearchSection = ({ navigation }) => {
    keyExtractor={(item,index) => item+index} 
    renderSectionHeader={renderSectionHeader} 
    renderItem={renderItem} 
+   backgroundColor={BGColor}
    />
  
   );
