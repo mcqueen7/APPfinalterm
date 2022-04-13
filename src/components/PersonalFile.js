@@ -33,15 +33,15 @@ const PersonalFile = ({ personaldata,navigation }) => {
                <Text fontSize={16}>好友</Text>
             </Center>
             <Center mx={7}>
-                <MaterialCommunityIcons name="account-group-outline" size={25}  />
+                <MaterialCommunityIcons name="account-group-outline" size={25} color={iconColor} />
                 <Text fontSize={16}>社團</Text>
             </Center>
             <Center mx={7}>
-            <MaterialCommunityIcons name="message-text-outline" size={25}  />
+            <MaterialCommunityIcons name="message-text-outline" size={25} color={iconColor} />
                 <Text fontSize={16}>聊天室</Text>
             </Center>
             <Center mx={7}>
-            <MaterialCommunityIcons name="gift-outline" size={25}  />
+            <MaterialCommunityIcons name="gift-outline" size={25} color={iconColor} />
                 <Text fontSize={16}>禮物</Text>
             </Center>
         </HStack>
