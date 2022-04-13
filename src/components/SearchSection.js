@@ -58,7 +58,7 @@ const SearchSection = ({ navigation }) => {
             </VStack>
           </HStack>
             
-          <Button onPress={() => console.log("87")} bgColor={numButton} h={"40px"}>{`${section.article_num}  ▶`}</Button>
+          <Button onPress={() => console.log("87")}  bgColor={numButton} h={"40px"}><Text color={BGColor}>{`${section.article_num}  ▶`}</Text></Button>
           </HStack>
           <>
           <FlatList
