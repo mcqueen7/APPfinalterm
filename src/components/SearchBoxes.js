@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable, Center, Container } from "native-base"
+import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable, Center, Container, useColorModeValue } from "native-base"
 
 const SearchBoxes = ({ boxdata, navigation }) => {
+ const textColor2=useColorModeValue("#FFFFFF","#FFFFFF");
   return (
 <Box mx={3}>
   <Box 
@@ -25,7 +26,7 @@ const SearchBoxes = ({ boxdata, navigation }) => {
               position="relative"
             />       
           {/* </Container> */}
-          <Center zIndex={2} position="absolute" bg="rgba(255,241,205,0.7)" h="70" bottom={0} borderRadius={12}><Text p="10px" color={"black"} fontSize={12}>{boxdata.description}</Text></Center>
+          <Center zIndex={2} position="absolute" bg="rgba(255,241,205,0.7)" h="70" bottom={0} borderRadius={12}><Text color={textColor2} p="10px" fontSize={12} >{boxdata.description}</Text></Center>
           </Center>
         </Pressable>
       </Box>   
