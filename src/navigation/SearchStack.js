@@ -21,7 +21,6 @@ const SearchStack = () => {
           options={
             {headerShown:false}
         }
-        
         />
       </Stack.Navigator>
 
