@@ -6,8 +6,9 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
-import HomeAllScreen from "../screens/HomeAllScreen"
+import {Box,HStack,Text} from "native-base";
+import HomeAllScreen from "../screens/HomeAllScreen";
+import SearchScreen from "../screens/SearchScreen";
 const Stack = createNativeStackNavigator(); 
 
 
@@ -15,8 +16,8 @@ const SearchStack = () => {
     return (
       <Stack.Navigator>
         <Stack.Screen 
-          name="HomeAllscreen" 
-          component={HomeAllScreen}
+          name="SearchScreen" 
+          component={SearchScreen}
           options={
             {headerShown:false}
         }
