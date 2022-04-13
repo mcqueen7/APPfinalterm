@@ -5,14 +5,14 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 const PersonalButton = ({ buttondata ,navigation }) => {
     
   return (
-    <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}>
-        <Button bg={"#E8E8E8"} borderRadius={20} w="160" mx={"10px"} my={"15px"}>
+        <Button bg={"#E8E8E8"} borderRadius={20} w="160" mx={"10px"} my={"15px"}
+          onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}
+        >
             <HStack>
                 <MaterialCommunityIcons name={buttondata.icon} size={25}/>
                 <Text w="60" textAlign={"center"}>{buttondata.label}</Text>
             </HStack>
         </Button>
-    </Pressable> 
   );
 };
 

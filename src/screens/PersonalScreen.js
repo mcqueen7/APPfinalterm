@@ -10,7 +10,6 @@ const renderSectionHeader = ({section,navigation}) => {
     if(section.title=="options")return (
         <Box w="100%" alignItems={"center"}>
         <FlatList
-            scrollEnabled={false}
             numColumns={2}
             data={section.data}
             renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}

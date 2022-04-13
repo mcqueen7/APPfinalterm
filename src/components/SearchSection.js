@@ -25,7 +25,7 @@ const SearchSection = ({ navigation }) => {
       )
       case "猜你喜歡": return (
           <>
-              <HStack mx={5} my={10} ><Heading fontSize="24" >{section.title}</Heading>
+              <HStack mx={5} mt={10} mb={5}><Heading fontSize="24" >{section.title}</Heading>
               </HStack>
               <>
               <FlatList
@@ -80,6 +80,7 @@ const SearchSection = ({ navigation }) => {
   return (
     
    <SectionList w="100%"  h="100%"  bgColor={"white"}
+   paddingTop="20px"
    sections={sections} 
    contentContainerStyle={{ paddingHorizontal: 7 }}
    stickySectionHeadersEnabled={false}

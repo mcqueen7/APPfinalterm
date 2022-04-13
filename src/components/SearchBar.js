@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const SearchBar = () => {
     return (
-    <VStack my="2" space={5} w="100%" maxW="500px">
+    <VStack mt={2} mb="20px" space={5} w="100%" maxW="500px">
 
     <VStack w="100%" space={3} alignSelf="center">
       <Input placeholder="搜尋" width="100%" borderRadius={20} py="3" px="1" fontSize="16" bgColor={"#E8E8E8"} placeholderTextColor={"black"}
