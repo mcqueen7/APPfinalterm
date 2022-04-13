@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
+import {Box,HStack,Text, useColorMode} from "native-base"
 
 const Stack = createNativeStackNavigator();
 // const Tab =  createMaterialBottomTabNavigator();   //trash navigator full of bugs
@@ -24,11 +24,15 @@ import NullScreen from "../screens/NullScreen";
 import ActionButton from "../components/ActionButton";
 
 const BigTabs = () => {
+  const{colorMode}=useColorMode();
   return (
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-         tabBarActiveTintColor: '#3B5998',
+         tabBarActiveTintColor: colorMode=="light"?"#3B5998": "#FFF1CD",
+         tabBarInactiveTintColor: colorMode=="light"?"#000000": "#E8E8E8",
+         tabBarStyle:{
+          backgroundColor:colorMode=="light"?"#ffffff": "#474747",},
         lazy:true,
         headerShown:false,
       }}
@@ -44,7 +48,7 @@ const BigTabs = () => {
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={30} />
           ),
-          tabBarColor:"#3B5998",
+          tabBarColor:"#3B5998", //for material
         }}
       />
       <Tab.Screen 
@@ -55,7 +59,7 @@ const BigTabs = () => {
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="magnify" color={color} size={30} />
           ),
-          tabBarColor:"#415fa6",
+          tabBarColor:"#415fa6", //for material
         }}
       />
       <Tab.Screen 
@@ -66,7 +70,7 @@ const BigTabs = () => {
           tabBarIcon: ({ color }) => ( <ActionButton />
             
           ),
-          tabBarColor:"#4666b3",
+          tabBarColor:"#4666b3", //for material
         }}
       />
         <Tab.Screen 
@@ -77,7 +81,7 @@ const BigTabs = () => {
           tabBarBadge:"7",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="playlist-edit" color={color} size={30} />
-          ),tabBarColor:"#4b6ebf",
+          ),tabBarColor:"#4b6ebf", //for material
         }}
       />
         <Tab.Screen 
@@ -88,7 +92,7 @@ const BigTabs = () => {
           tabBarBadge:"99+",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="account" color={color} size={30} />
-          ),tabBarColor:"#5075cc",
+          ),tabBarColor:"#5075cc", //for material
         }}
       />
     </Tab.Navigator>

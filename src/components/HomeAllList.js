@@ -1,6 +1,6 @@
 import React from "react";
 import {  StyleSheet } from "react-native";
-import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box, } from 'native-base';
+import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box,useColorModeValue } from 'native-base';
 
 import sections from "../json/home_all_section.json";
 
@@ -14,6 +14,7 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 // console.log(sections);
 
 const HomeAllList = (navigation) => {
+    const BGcolor=useColorModeValue("#ffffff","#313131");
   const renderSectionHeader = ({section}) => {
     switch (section.type){
         case "big1":
@@ -92,6 +93,7 @@ const HomeAllList = (navigation) => {
         keyExtractor={(item,index) => item + index} 
         renderSectionHeader={renderSectionHeader} 
         renderItem={renderItem} 
+        backgroundColor={BGcolor}
         />
   );
 };

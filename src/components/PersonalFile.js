@@ -4,6 +4,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 const PersonalFile = ({ personaldata,navigation }) => {
     const topBoxBGColor=useColorModeValue("#FFF5DB","#36322F");
+    const iconColor=useColorModeValue("#000000","#FFFFFF");
   return (
        <Box bgColor={topBoxBGColor}w="100%" h="400px" alignItems={"center"} borderBottomLeftRadius={30} borderBottomRightRadius={30} mb="30px">
         <Image mt={2} source={{uri:personaldata.headimg}} alt={`${personaldata.name}的照片`} size={"120px"}/>
@@ -28,7 +29,7 @@ const PersonalFile = ({ personaldata,navigation }) => {
         </Button>
         <HStack mt={5}>
             <Center mx={7}>
-                <MaterialCommunityIcons name="account-multiple-outline" size={25}  />
+                <MaterialCommunityIcons name="account-multiple-outline" size={25} color={iconColor}/>
                <Text fontSize={16}>好友</Text>
             </Center>
             <Center mx={7}>
