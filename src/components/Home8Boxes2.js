@@ -6,6 +6,7 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 const Home8Boxes2 = ({boxdata,navigation}) => {
     const boxBGcolor=useColorModeValue("#92AFEC","#A4A2A2");
+    
     const image = { uri:`${boxdata.image}` };
     return( 
         <Pressable onPress={()=>alert("做不完了沒Detail")}>

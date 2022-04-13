@@ -5,7 +5,7 @@ import { ImageBackground } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 const Home8Boxes1 = ({boxdata,navigation}) => {
-    const textColor=useColorModeValue("#ffffff","#ffffff");
+    const textColor=useColorModeValue("#000000","#000000");
     return( 
         <Pressable onPress={()=>alert("做不完了沒Detail")}>
         <Center mt="20px" w="80px" mx="10px" h="80px" bgColor="#FFF1CD"  borderRadius={12} 

@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,Center,HStack,Text} from "native-base"
+import {Box,Center,HStack,Text, useColorMode} from "native-base"
 
 const Tab2 =  createMaterialTopTabNavigator();
 
@@ -16,23 +16,26 @@ import HomeRecommendStack from "./HomeRecommendStack";
 
 
 const HomeTabs = () => {
+  const{colorMode}=useColorMode();
   return (
       <Tab2.Navigator
       initialRouteName="All"
       screenOptions={{  
-        tabBarActiveTintColor :"#3B5998",
+        tabBarInactiveTintColor:colorMode=="light"?"#868686":"#E8E8E8",
+        tabBarActiveTintColor :colorMode=="light"?"#477CEA":"#FFF1CD",
         tabBarBounces:"true",
         tabBarIndicatorStyle:{
           width:80,
           height:7,
           left:"7%",
           borderRadius:5,
+          borderColor:colorMode=="light"?"#000000":"#FFF1CD",
         },
         tabBarLabelStyle: { 
           fontSize: 16,
         },
         tabBarStyle:{
-          backgroundColor:"#ffffff"
+          backgroundColor:colorMode=="light"?"#ffffff":"#474747"
         },
       }}
       >
@@ -41,7 +44,6 @@ const HomeTabs = () => {
         component={HomeTraceStack} 
         options={{
           title: "追蹤",
-          
         }}
       />
       <Tab2.Screen 
