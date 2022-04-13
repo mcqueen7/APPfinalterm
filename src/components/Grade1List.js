@@ -53,7 +53,7 @@ const Grade1List = (navigation) => {
   return (
     <SectionList w="100%"  h="100%"  bgColor={"white"}
         sections={sections} 
-        contentContainerStyle={{ paddingHorizontal: 14 }}
+        contentContainerStyle={{ paddingHorizontal: 7 }}
         stickySectionHeadersEnabled={false}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
