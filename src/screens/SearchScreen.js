@@ -6,7 +6,8 @@ import SearchSection from "../components/SearchSection";
 
 const SearchScreen = ({ navigation }) => {
   return (
-    // <SafeAreaView >    
+    // <SafeAreaView >   
+    // 
       <SearchSection />
     // </SafeAreaView>
   );

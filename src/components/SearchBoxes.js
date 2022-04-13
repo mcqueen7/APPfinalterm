@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable, Center } from "native-base"
+import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable, Center, Container } from "native-base"
 
 const SearchBoxes = ({ boxdata, navigation }) => {
   return (
@@ -15,15 +15,16 @@ const SearchBoxes = ({ boxdata, navigation }) => {
         <Pressable 
           onPress={() => navigation.navigate('Detail', boxdata)}
         >
-          <Center>
-          <AspectRatio w="200" h="200" ratio={1} borderRadius="12">
+          <Center  w="200px" h="200px">
+          {/* <Container w="200px" h="200px"  borderRadius="12"> */}
             <Image  
+              w="200px" h="200px" 
               borderRadius="12"
               source={{ uri: boxdata.image }}
               alt={boxdata.alt}
               position="relative"
             />       
-          </AspectRatio>
+          {/* </Container> */}
           <Center zIndex={2} position="absolute" bg="rgba(255,241,205,0.7)" h="70" bottom={0} borderRadius={12}><Text p="10px" color={"black"} fontSize={12}>{boxdata.description}</Text></Center>
           </Center>
         </Pressable>

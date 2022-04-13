@@ -7,7 +7,7 @@ const GuessDetail = ({ boxdata, navigation }) => {
      <Pressable onPress={() => {console.log("asdasdasda")}}>    
           <Text  
         _dark={{ color: "warmGray.700"}}
-        _light={{ color:"warmGray.700" }}>{boxdata.label}</Text>
+        _light={{ color:"warmGray.700" }} fontSize={16}>{boxdata.label}</Text>
       </Pressable>
     </Center>
   )};

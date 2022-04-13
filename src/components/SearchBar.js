@@ -4,21 +4,17 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 
 
 const SearchBar = () => {
-    return <VStack my="2" space={5} w="100%" maxW="500px" divider={<Box px="2">
-    <Divider />
-  </Box>}>
+    return (
+    <VStack my="2" space={5} w="100%" maxW="500px">
 
-<VStack w="100%" space={3} alignSelf="center">
-  {/* <Heading fontSize="lg">Material</Heading> */}
-  <Input placeholder="搜尋" width="100%" borderRadius={20} py="3" px="1"
-   fontSize="14" InputLeftElement={<Icon m="2" ml="3" size="6" color="dark.100" 
-   as={<MaterialCommunityIcons name="magnify" />} />} 
-   InputRightElement={<Icon m="2" mr="3" size="6" color="dark.100" as={<MaterialCommunityIcons name="microphone" />} />} 
-    bgColor={"#EEEEEE"}
-   />
-</VStack>
-</VStack>;
+    <VStack w="100%" space={3} alignSelf="center">
+      <Input placeholder="搜尋" width="100%" borderRadius={20} py="3" px="1" fontSize="16" bgColor={"#E8E8E8"} placeholderTextColor={"black"}
+        InputLeftElement={<Icon m="2" mr="3" size="6" color={"black"} as={<MaterialCommunityIcons name="magnify" />} />} 
+        InputRightElement={<Icon m="2" mr="3" size="6"color={"black"} as={<MaterialCommunityIcons name="microphone" />} />} 
+      /> 
+    </VStack>
+  </VStack>
+    );
 }
-  ;
   
   export default SearchBar;
