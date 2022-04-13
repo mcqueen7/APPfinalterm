@@ -13,7 +13,7 @@ const HomeBigBox2 = ({boxdata}) => {
               <Text fontSize={16}>{boxdata.title}</Text>
               <Box borderColor="black" borderTopWidth={1} borderBottomWidth={1} w="180" h="5px"></Box>
               <Text mt="15px" w="200" fontSize={12}>{boxdata.content}</Text>
-              <Button w="110" h="40px" mt="15px" borderRadius={16} bgColor="#3B5998" fontSize={16}>{boxdata.button}</Button>
+              <Button w="110" h="40px" mt="15px" borderRadius={16} bgColor="#477CEA" fontSize={16}>{boxdata.button}</Button>
             </VStack>
             <VStack >
             <Image source={image} alt={boxdata.title} size="130px"alignSelf={"center"} />

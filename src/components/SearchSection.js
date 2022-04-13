@@ -59,7 +59,7 @@ const SearchSection = ({ navigation }) => {
        </VStack>
        <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
        <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")}>1.3k ▶ </Button>
+        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.3k ▶ </Button>
        </VStack>
        </HStack>
      
@@ -83,7 +83,7 @@ const SearchSection = ({ navigation }) => {
        </VStack>
        <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
        <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")}>1.2k ▶ </Button>
+        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.2k ▶ </Button>
        </VStack>
        </HStack>
      
@@ -107,7 +107,7 @@ const SearchSection = ({ navigation }) => {
        </VStack>
        <HStack  w="100%" justifyContent={"flex-end"}alignItems="center" bottom="3" right="-12" position="absolute">
        <VStack mx={30} justifyContent={"center"}>
-        <Button onPress={() => console.log("hello world")}>1.0k ▶ </Button>
+        <Button onPress={() => console.log("hello world")} bgColor={"#477CEA"}>1.0k ▶ </Button>
        </VStack>
        </HStack>
      
