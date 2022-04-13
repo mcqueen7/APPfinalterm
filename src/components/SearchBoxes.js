@@ -26,7 +26,7 @@ const SearchBoxes = ({ boxdata, navigation }) => {
               position="relative"
             />       
           {/* </Container> */}
-          <Center zIndex={2} position="absolute" bg="rgba(102,102,102,0.67)" h="70" w="100%" bottom={0} borderRadius={12}><Text color={textColor2} p="10px" fontSize={16} >{boxdata.description}</Text></Center>
+          <Center zIndex={2} position="absolute" bg="rgba(102,102,102,0.7)" h="70" w="100%" bottom={0} borderRadius={12}><Text color={textColor2} p="10px" fontSize={16} >{boxdata.description}</Text></Center>
           </Center>
         </Pressable>
       </Box>   
