@@ -10,6 +10,7 @@ import SearchBoxes from "./SearchBoxes";
 console.log(sections[0].title);
 
 const SearchSection = ({ navigation }) => {
+  const subColor1=useColorModeValue("#7C7C7C","#9A9A9A");
   const BGColor=useColorModeValue("#FFFFFF","#000000");
   const hashtag=useColorModeValue("#000000","#FFFFFF");
   const numButton=useColorModeValue("#477CEA","#EEEEEE");
@@ -53,7 +54,7 @@ const SearchSection = ({ navigation }) => {
             </VStack>  
             <VStack paddingLeft={2} justifyContent="space-around"  py={2}>
               <Text bold fontSize="lg">{section.title}</Text>
-              <Text>{section.subtitle}</Text>
+              <Text color={subColor1}>{section.subtitle}</Text>
             </VStack>
           </HStack>
             
