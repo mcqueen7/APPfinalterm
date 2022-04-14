@@ -6,7 +6,7 @@ const SearchBoxes = ({ boxdata, navigation }) => {
   return (
 <Box mx={3}>
   <Box 
-      marginX={1} marginBottom={2} borderRadius={12} shadow={2} marginTop={2}
+      marginX={1} marginBottom={10} borderRadius={12} shadow={2} marginTop={2}
       _dark={{ borderColor: 'blueGray.500', borderWidth: 0.6 }}
     >
       <Box p={1}

@@ -4,7 +4,7 @@ import counterReducer from "./counterReducer"
 
 //part 4 combine Reducers and Create Store
 const reducer = combineReducers({
-    counter: counterReducer,
+    artcounter: counterReducer,
   });
   
 const store = createStore(
