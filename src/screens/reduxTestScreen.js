@@ -28,7 +28,7 @@ const reduxTestScreen = ({ navigation }) => {
       <Switch
         name="light Mode"
         isChecked={"light" === "light"}
-        onToggle={() => alert("FUCKYOU")}
+        onToggle={() => alert("FUXKYOU")}
         accessibilityLabel="display-mode"
         accessibilityHint="light or dark mode"
       />
