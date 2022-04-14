@@ -9,6 +9,7 @@ import HomeBigBox1 from "./HomeBigBox1";
 import HomeBigBox2 from "./HomeBigBox2";
 import Home8Boxes1 from "./Home8Boxes1";
 import Home8Boxes2 from "./Home8Boxes2";
+import Home4Boxes from "./Home4Boxes";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 // console.log(sections);
@@ -58,7 +59,12 @@ const HomeAllList = (navigation) => {
                 </>
             )
         case "4boxes":
-            return  <Heading fontSize="24px" mt="30px">{section.title} </Heading>   //mr26px
+            return  (
+                <>
+                    <Heading fontSize="24px" mt="30px">{section.title} </Heading> 
+                    <Home4Boxes  boxdata={section.data}/>
+                </>
+            )  //mr26px
         case "big2":
             return null    
         default:
