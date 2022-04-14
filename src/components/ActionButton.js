@@ -10,7 +10,7 @@ export default () => {
   //
   
   const { isOpen, onOpen, onClose } = useDisclose();
-  const BGcolor=useColorModeValue("#3B5998","#FFF1CD");
+  const BGcolor=useColorModeValue("#477CEA","#FFF1CD");
   const plusColor=useColorModeValue("#FFFFFF","#000000");
   const iconColor=useColorModeValue("#000000","#ffffff");
   return (
@@ -28,7 +28,7 @@ export default () => {
       <Actionsheet isOpen={isOpen} onClose={onClose}>
         <Actionsheet.Content>
           <Actionsheet.Item alignItems={"center"}><Text fontSize={20} >新增貼文</Text></Actionsheet.Item>
-          <Actionsheet.Item ><HStack alignItems={"center"} ><MaterialCommunityIcons name="file-outline" color={iconColor} size={20} /><Text fontSize={16} ml={3}>開啟新檔</Text></HStack></Actionsheet.Item>
+          <Actionsheet.Item onPress={()=>alert("ASS")}><HStack alignItems={"center"} ><MaterialCommunityIcons name="file-outline" color={iconColor} size={20} /><Text fontSize={16} ml={3}>開啟新檔</Text></HStack></Actionsheet.Item>
           <Actionsheet.Item ><HStack alignItems={"center"}><MaterialCommunityIcons name="content-save" color={iconColor} size={20} /><Text fontSize={16} ml={3}>另存新檔</Text></HStack></Actionsheet.Item>
           <Actionsheet.Item ><HStack alignItems={"center"}><MaterialCommunityIcons name="pencil-outline" color={iconColor} size={20} /><Text fontSize={16} ml={3}>草稿編輯</Text></HStack></Actionsheet.Item>
           <Actionsheet.Item ><HStack alignItems={"center"}><MaterialCommunityIcons name="delete" color={iconColor} size={20} /><Text fontSize={16} ml={3}>刪除貼文</Text></HStack></Actionsheet.Item>
