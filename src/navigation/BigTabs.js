@@ -27,7 +27,7 @@ const BigTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-         tabBarActiveTintColor: colorMode=="light"?"#3B5998": "#FFF1CD",
+         tabBarActiveTintColor: colorMode=="light"?"#477CEA": "#FFF1CD",
          tabBarInactiveTintColor: colorMode=="light"?"#000000": "#E8E8E8",
          tabBarStyle:{
           backgroundColor:colorMode=="light"?"#ffffff": "#474747",},
