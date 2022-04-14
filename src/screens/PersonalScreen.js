@@ -55,7 +55,6 @@ export default PersonalScreen;
 
 
 
-
 //for json
 // "headimg":"asdasdasd",
 // "name":"風魔小太郎",

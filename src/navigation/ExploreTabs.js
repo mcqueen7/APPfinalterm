@@ -24,7 +24,6 @@ const ExploreTabs = () => {
     <SafeAreaProvider>
       <Tab2.Navigator
       initialRouteName="Grade1"
-      
       screenOptions={{  
         tabBarInactiveTintColor:colorMode=="light"?"#868686":"#E8E8E8",
         tabBarActiveTintColor:colorMode=="light"?"#477CEA":"#FFF1CD",
