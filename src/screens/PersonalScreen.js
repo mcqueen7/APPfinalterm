@@ -11,6 +11,7 @@ const renderSectionHeader = ({section,navigation}) => {
         <Box w="100%" alignItems={"center"}>
         <FlatList
             numColumns={2}
+            alignItems="center"
             data={section.data}
             renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
             showsHorizontalScrollIndicator={false}

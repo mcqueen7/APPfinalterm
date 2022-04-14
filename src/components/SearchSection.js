@@ -7,7 +7,6 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import sections from "../json/search_section.json"
 import SearchBoxes from "./SearchBoxes";
 
-console.log(sections[0].title);
 
 const SearchSection = ({ navigation }) => {
   const subColor1=useColorModeValue("#7C7C7C","#9A9A9A");

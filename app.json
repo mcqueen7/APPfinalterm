@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "midterm",
-    "slug": "midterm",
+    "name": "17_ColloeGo",
+    "slug": "17_colloego",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "17組 ColloeGo\n數位二甲\t110919002\t藍中崑\n數位二甲\t110919006\t郭匚豪\n數位二甲\t110919009\t黃塏峻",
+    "githubUrl": "https://github.com/mcqueen7/APPmidterm"
   }
 }
