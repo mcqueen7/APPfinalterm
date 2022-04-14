@@ -12,6 +12,7 @@ import {Box,Center,HStack,StatusBar,Text, useColorMode} from "native-base"
 import Grade1Stack from "./Grade1Stack";
 import Grade2Stack from "./Grade1Stack";
 import Grade3Stack from "./Grade1Stack";
+import reduxTestScreen from "../screens/reduxTestScreen";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 
@@ -63,7 +64,7 @@ const ExploreTabs = () => {
       />
       <Tab2.Screen 
         name="Grade3" 
-        component={Grade3Stack} 
+        component={reduxTestScreen} 
         options={{
           title: "高三",
         }}

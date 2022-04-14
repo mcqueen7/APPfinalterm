@@ -1,0 +1,2 @@
+//part 1 ACTION TYPE CONST DEF
+export const SET_ART_COUNTER = 'SET_ART_COUNTER';

@@ -1,10 +1,9 @@
-import { SET_COUNTER } from "../constans";
+import {SET_ART_COUNTER}from"../constants";
 // part 2 ACTION DEF
 
-export const setCounter=(counter)=>(dispatch)=>{
+export const setArtCounter = (counter) => (dispatch) => {
     dispatch({
-        type:SET_COUNTER,
-        payload:counter,
-    })
-
-}
+      type: SET_ART_COUNTER,
+      payload: counter,
+    });
+  };
