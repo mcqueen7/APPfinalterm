@@ -1,8 +1,12 @@
 import React from "react";
 import { Box,Text,HStack, FlatList, Center, Image, Button, Icon,useColorModeValue } from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import { useSelector} from "react-redux";
+import {setArtCounter} from "../redux/actions"
 const PersonalFile = ({ personaldata,navigation }) => {
+    const { artcount } = useSelector((state) => state.artcounter);
+    
+    ///
     const topBoxBGColor=useColorModeValue("#FFF5DB","#36322F");
     const iconColor=useColorModeValue("#000000","#FFFFFF");
   return (
@@ -12,7 +16,7 @@ const PersonalFile = ({ personaldata,navigation }) => {
         <Text fontSize={16} _light={{color:"#868686"}} _dark={{color:"#B0B0B0"}}>{personaldata.school}</Text>
         <HStack mt={2}>
             <Center mx={5} w="70px">
-                <Text fontSize={16}>{personaldata.articleNum}</Text>
+                <Text fontSize={16}>{Number(personaldata.articleNum)+artcount}</Text>
                 <Text fontSize={16}>文章數</Text>
             </Center>
             <Center mx={5} w="70px">
@@ -24,7 +28,8 @@ const PersonalFile = ({ personaldata,navigation }) => {
                 <Text fontSize={16}>被收藏數</Text>
             </Center>
         </HStack>
-        <Button mt={2} w="360" h={50} _light={{bgColor:"#477CEA"}} _dark={{bgColor:"#FFF5F5"}} borderRadius={"20px"} onPress={()=>alert("NO TIME")}>
+        <Button mt={2} w="360" h={50} _light={{bgColor:"#477CEA"}} _dark={{bgColor:"#FFF5F5"}} 
+        borderRadius={"20px"} onPress={()=>alert("time limit")}>
             <Text fontSize={16} _light={{color:"#ffffff"}} _dark={{color:"#000000"}}>我的學習歷程</Text>
         </Button>
         <HStack mt={5}>
