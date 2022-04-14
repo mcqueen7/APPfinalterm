@@ -3,7 +3,7 @@ import {  Center, HStack, Button, Text, Switch } from "native-base";
 import { useDispatch, useSelector } from "react-redux";
 import {setArtCounter} from "../redux/actions"
 
-const reduxTestScreen = ({ navigation }) => {
+const ReduxTestScreen = ({ navigation }) => {
     const { artcount } = useSelector((state) => state.artcounter);
     // Define a dispatch to send actions
     const dispatch = useDispatch();
@@ -28,7 +28,7 @@ const reduxTestScreen = ({ navigation }) => {
       <Switch
         name="light Mode"
         isChecked={"light" === "light"}
-        onToggle={() => alert("FUCKYOU")}
+        onToggle={() => alert("FUXKYOU")}
         accessibilityLabel="display-mode"
         accessibilityHint="light or dark mode"
       />
@@ -40,6 +40,6 @@ const reduxTestScreen = ({ navigation }) => {
   );
 };
 
-export default reduxTestScreen;
+export default ReduxTestScreen;
 
 

@@ -14,7 +14,7 @@ const SearchBoxes = ({ boxdata, navigation }) => {
         _light={{ bg: "blueGray.50" }}
         borderRadius="12">
         <Pressable 
-          onPress={() => navigation.navigate('Detail', boxdata)}
+          onPress={() => alert("NO detail")}
         >
           <Center  w="200px" h="200px">
           {/* <Container w="200px" h="200px"  borderRadius="12"> */}

@@ -57,7 +57,6 @@ const SearchSection = ({ navigation }) => {
               <Text color={subColor1}>{section.subtitle}</Text>
             </VStack>
           </HStack>
-            
           <Button onPress={() => console.log("87")}  bgColor={numButton} h={"40px"}><Text color={BGColor}>{`${section.article_num}  ▶`}</Text></Button>
           </HStack>
           <>
