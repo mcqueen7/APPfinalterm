@@ -1,0 +1,8 @@
+Material tab bar 爛套件 問題一堆 卡、盪、icon 、被切、定要包在一個Stack 裡面才能用內建的Header
+git版本衝突
+node_module 內路徑衝突
+actionlist.header footer過期了
+ERROW CODE'104'套件找不到什麼請嘗試 yarn或np, install 檔案其實沒有問題 只要重新yarn start 就解決了
+git hub pull下來不會改檔名大小寫 APP有差
+時間不夠
+匚豪
