@@ -30,7 +30,7 @@
             },
             {
                 "label":"個人資料",
-                "type":"null",
+                "type":"personaldata",
                 "icon":"account-edit-outline"
             },
             {

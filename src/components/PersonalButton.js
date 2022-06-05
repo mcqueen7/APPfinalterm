@@ -3,10 +3,13 @@ import { Box,Text,HStack, FlatList, Center, Image, Button, Icon, VStack ,Pressab
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { signOut } from "../redux/accountSlice";
 import { useDispatch } from "react-redux";
+import PersonalDataScreen from "../screens/PersonalDataScreen";
+import { useNavigation } from "@react-navigation/native";
 
 
-
-const PersonalButton = ({ buttondata ,navigation}) => {
+const PersonalButton = ({ buttondata}) => {
+  const navigation = useNavigation();
+ 
   const dispatch = useDispatch();
   const{colorMode, toggleColorMode}=useColorMode();
   const buttonBG=useColorModeValue("#E8E8E8","#393939"); 
@@ -14,7 +17,7 @@ const PersonalButton = ({ buttondata ,navigation}) => {
   return (
         <Button bgColor={buttonBG} borderRadius={20} w="160" mx={"10px"} my={"15px"}
           onPress={()=>{
-            console.log(buttondata.type);
+            // console.log(buttondata.type);
             switch(buttondata.type){
                 case "darkmode":
                   //alert("switch darkmode");
@@ -23,6 +26,10 @@ const PersonalButton = ({ buttondata ,navigation}) => {
                 case "logout":
                   dispatch(signOut());
                   break;
+                case "personaldata" :
+                  //console.log(navigation);
+                  navigation.navigate(PersonalDataScreen);
+                  break; 
                 default:   
                   alert("做不完了還MORE!!!!!!!!");
                   break;

@@ -8,21 +8,26 @@ import PersonalButton from "../components/PersonalButton";
 
 
 
-const renderSectionHeader = ({section,navigation}) => {
+
+const renderSectionHeader = ({section}) => {
+    
+    // console.log("ASS：");
+    //console.log(navigation);
+    //console.log(section);
     if(section.title=="options")return (
         <Box w="100%" alignItems={"center"}>
         <FlatList
             numColumns={2}
             alignItems="flex-start"
             data={section.data}
-            renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
+            renderItem={({ item }) => <PersonalButton buttondata={item} />}
             showsHorizontalScrollIndicator={false}
             stickySectionHeadersEnabled={false}
             keyExtractor={ (item,index) => item + index}
         />
         </Box>
     );
-    else return <PersonalFile personaldata={section.data[0]} navigation={navigation}/> 
+    else return <PersonalFile personaldata={section.data[0]}/> 
     // return <Text>{section.title}</Text>
   };
 const renderItem = ({item,section,navigation}) => {
@@ -33,6 +38,9 @@ const renderItem = ({item,section,navigation}) => {
    
   };
 const PersonalScreen = ({ navigation }) => {
+    
+//     console.log("ASDASDASD");
+// console.log(navigation);
     const BGcolor=useColorModeValue("#FFFFFF","#000000");
     return ( 
      <Box bgColor={"white"} w="100%" h="100%">

@@ -9,6 +9,7 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text, useColorMode} from "native-base"
 import HomeTabs from "./HomeTabs";
 import PersonalScreen from "../screens/PersonalScreen";
+import PersonalDataScreen from "../screens/PersonalDataScreen";
 
 const Stack = createNativeStackNavigator(); 
 
@@ -26,6 +27,29 @@ const PersonalStack = () => {
           component={PersonalScreen}
           options={{
             title: "個人",
+            headerTitleAlign:"center",
+            // headerShown:false,
+            headerStyle:{
+                backgroundColor:colorMode=="light"?"#FFF1CD":"#474747",
+                width:20
+            },
+            headerShadowVisible:{
+                shadowColor: "#000",
+                shadowOffset: { width: 0, height: 5},
+                shadowOpacity: 0.8,
+                elevation: 5, // Android Only
+            },
+            headerTitleStyle: {
+              color:colorMode=="light"?"#000000":"#FFFFFF",
+              fontSize:20,
+            },
+          }}
+        />
+        <Stack.Screen
+          name="PersonalDataScreen"
+          component={PersonalDataScreen}
+          options={{
+            title: "個人資料設定",
             headerTitleAlign:"center",
             // headerShown:false,
             headerStyle:{
