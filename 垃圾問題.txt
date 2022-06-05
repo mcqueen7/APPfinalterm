@@ -10,3 +10,8 @@ git hub pull下來不會改檔名大小寫 APP有差
 -------------------------------------------------
 Error: Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?------------------------DEVTOOL的鍋
 動畫時間不受控
+
+onpress 自動觸發(安卓)
+
+pressable 沒反應(安卓) 網路上很多說法 改zindex 父子position關係設定 import來源選RN...等等等
+共通點是 他們都說IOS沒這問題還有我他媽試了全都沒用-最後直接改用button 

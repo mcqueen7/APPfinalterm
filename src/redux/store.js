@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { persistStore, persistReducer } from 'redux-persist';
 import { configureStore } from '@reduxjs/toolkit';
 import accountReducer from "./accountSlice";
-import settingsReducer from "./settingsSlice"
+// import settingsReducer from "./settingsSlice"
 //import contentReducer from "./contentSlice";
 import articleNumReducer from "./articleNumSlice"
 
@@ -15,7 +15,7 @@ const persistConfig = {
 export const store = configureStore({
   reducer: {
     account: accountReducer,
-    settings: settingsReducer,
+    //settings: settingsReducer,
     //content: contentReducer,
     articleNum: articleNumReducer,
   },

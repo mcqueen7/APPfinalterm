@@ -20,8 +20,12 @@ import SearchScreen from "../screens/SearchScreen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import NullScreen from "../screens/NullScreen";
 import ActionButton from "../components/ActionButton";
+import AuthScreen from '../screens/AuthScreen';
+import { selectLogin } from "../redux/accountSlice";
+import { useSelector } from "react-redux";
 
 const BigTabs = () => {
+  const login = useSelector(selectLogin);
   const{colorMode}=useColorMode();
   return (
     <Tab.Navigator
@@ -84,7 +88,11 @@ const BigTabs = () => {
       />
         <Tab.Screen 
         name="Personal" 
-        component={PersonalStack} 
+        component={
+          !login.hasLogin
+          ?AuthScreen
+          :PersonalStack
+        } 
         options={{
           title: "Personal",
           headerShown:false,
