@@ -6,3 +6,7 @@ ERROW CODE'104'套件找不到什麼請嘗試 yarn或np, install 檔案其實沒
 git hub pull下來不會改檔名大小寫 APP有差
 時間不夠
 匚豪
+
+-------------------------------------------------
+Error: Reanimated 2 failed to create a worklet, maybe you forgot to add Reanimated's babel plugin?------------------------DEVTOOL的鍋
+動畫時間不受控

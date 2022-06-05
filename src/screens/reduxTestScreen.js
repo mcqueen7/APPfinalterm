@@ -1,20 +1,21 @@
 import React from "react";
 import {  Center, HStack, Button, Text, Switch } from "native-base";
 import { useDispatch, useSelector } from "react-redux";
-import {setArtCounter} from "../redux/actions"
+import { selectArticleNum, setArticleNum } from "../redux/articleNumSlice";
+
 
 const ReduxTestScreen = ({ navigation }) => {
-    const { artcount } = useSelector((state) => state.artcounter);
+    const artcount = useSelector(selectArticleNum);
     // Define a dispatch to send actions
     const dispatch = useDispatch();
   return (
    
     <Center flex={1} bg={"light" == "light" ? "white" : "black"}>
     <HStack space={20}>
-      <Button borderRadius={0} width={70} onPress={() => dispatch(setArtCounter(artcount + 1))}>
+      <Button borderRadius={0} width={70} onPress={() => dispatch(setArticleNum(artcount + 1))}>
         <Text fontSize={40} color={"light" == "light" ? "white" : "black"}>+</Text>
       </Button>
-      <Button borderRadius={0} width={70} onPress={() => dispatch(setArtCounter(artcount - 1))}>
+      <Button borderRadius={0} width={70} onPress={() => dispatch(setArticleNum(artcount - 1))}>
         <Text fontSize={40} color={"light" == "light" ? "white" : "black"}>-</Text>
       </Button>
     </HStack>

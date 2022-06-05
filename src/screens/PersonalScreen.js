@@ -6,12 +6,14 @@ import sections from '../json/personal_section.json';
 import PersonalFile from "../components/PersonalFile";
 import PersonalButton from "../components/PersonalButton";
 
+
+
 const renderSectionHeader = ({section,navigation}) => {
     if(section.title=="options")return (
         <Box w="100%" alignItems={"center"}>
         <FlatList
             numColumns={2}
-            alignItems="center"
+            alignItems="flex-start"
             data={section.data}
             renderItem={({ item }) => <PersonalButton buttondata={item} navigation={navigation}/>}
             showsHorizontalScrollIndicator={false}

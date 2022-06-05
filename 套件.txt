@@ -1,3 +1,11 @@
+裝node
+npm install -g yarn
+yarn global add expo-cli
+//新電腦裝一次
+
+expo init 
+yarn start
+
 導覽
 yarn add @react-navigation/native @react-navigation/native-stack
 
@@ -39,6 +47,26 @@ yarn add axios
 
 CHART
 yarn add react-native-wagmi-charts
+
+MAP
+expo install react-native-maps
+
+GPS
+expo install expo-constants expo-location expo-device
+yarn add expo-location
+
+FIREBASE
+yarn add firebase@9.6.11
+
+firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyBX2PBgqLolDrs3PsOCevO2tl-R-zScLuc",
+  authDomain: "appfinalterm-7e93e.firebaseapp.com",
+  projectId: "appfinalterm-7e93e",
+  storageBucket: "appfinalterm-7e93e.appspot.com",
+  messagingSenderId: "309514409677",
+  appId: "1:309514409677:web:ce56852b44331e87967b84"
+};
 
 /////////////////////
 除錯：react-devtools

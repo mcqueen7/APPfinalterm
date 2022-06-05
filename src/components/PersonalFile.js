@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box,Text,HStack, FlatList, Center, Image, Button, Icon,useColorModeValue } from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { useSelector} from "react-redux";
-import {setArtCounter} from "../redux/actions"
+import { useSelector } from "react-redux";
+import { selectArticleNum } from "../redux/articleNumSlice";
+
+
 const PersonalFile = ({ personaldata,navigation }) => {
-    const { artcount } = useSelector((state) => state.artcounter);
-    
-    ///
+    const  artcount = useSelector(selectArticleNum);
+    console.log(artcount);
+ 
     const topBoxBGColor=useColorModeValue("#FFF5DB","#36322F");
     const iconColor=useColorModeValue("#000000","#FFFFFF");
   return (

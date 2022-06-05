@@ -27,9 +27,10 @@ const PersonalStack = () => {
           options={{
             title: "個人",
             headerTitleAlign:"center",
+            // headerShown:false,
             headerStyle:{
                 backgroundColor:colorMode=="light"?"#FFF1CD":"#474747",
-                height:"60px",
+                width:20
             },
             headerShadowVisible:{
                 shadowColor: "#000",

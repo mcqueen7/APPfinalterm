@@ -33,6 +33,7 @@ const BigTabs = () => {
           backgroundColor:colorMode=="light"?"#ffffff": "#474747",},
         lazy:true,
         headerShown:false,
+        
       }}
       shifting={true}
       labeled={true}
@@ -86,6 +87,7 @@ const BigTabs = () => {
         component={PersonalStack} 
         options={{
           title: "Personal",
+          headerShown:false,
           tabBarBadge:"99+",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="account" color={color} size={30} />
