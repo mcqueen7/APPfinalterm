@@ -19,14 +19,14 @@
                 "icon":"bookmark-outline"
             },
             {
-                "label":"我的追蹤",
+                "label":"設定",
                 "type":"null",
-                "icon":"heart-outline"
+                "icon":"cog-outline"
             },
             {
-                "label":"我的信箱",
+                "label":"我的最愛",
                 "type":"null",
-                "icon":"email-outline"
+                "icon":"heart-outline"
             },
             {
                 "label":"個人資料",
@@ -39,9 +39,9 @@
                 "icon":"toggle-switch-off-outline"
             },
             {
-                "label":"設定",
-                "type":"null",
-                "icon":"cog-outline"
+                "label":"登出",
+                "type":"logout",
+                "icon":"logout"
             }
         ]
     }
