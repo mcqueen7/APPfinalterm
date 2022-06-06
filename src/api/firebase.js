@@ -50,9 +50,10 @@ export const register = async ({ name, email, password }) => {
   const user = userCredential.user;
   await setDoc(doc(db, "users", user.uid), {
     name,
+    schoolname:"學校尚未填寫",
     email: "",
-    adrs: "",
-    tel: "",
+    adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
+    tel: ""
   });
   return userCredential.user;
 }
