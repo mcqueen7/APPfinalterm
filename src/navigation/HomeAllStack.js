@@ -8,6 +8,9 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import {Box,HStack,Text} from "native-base"
 import HomeAllScreen from "../screens/HomeAllScreen"
+import HomeDetailScreen from "../screens/HomeDetailScreen"
+import TaipeiSchoolDetailScreen from "../screens/TaipeiSchoolDetailScreen"
+import DepartmentDetailScreen from "../screens/DepartmentDetailScreen"
 const Stack = createNativeStackNavigator(); 
 
 
@@ -19,8 +22,30 @@ const HomeAllStack = () => {
           component={HomeAllScreen}
           options={
             {headerShown:false}
-        }
-        
+        }       
+        />
+        <Stack.Screen 
+          name="HomeDetailscreen" 
+          component={HomeDetailScreen}
+          options={
+            {headerShown:true}
+        }      
+         
+        />
+          <Stack.Screen 
+          name="TaipeiSchoolDetailscreen" 
+          component={TaipeiSchoolDetailScreen}
+          options={
+            {headerShown:true}
+        }      
+         
+        />
+        <Stack.Screen 
+          name="DepartmentDetailscreen" 
+          component={DepartmentDetailScreen}
+          options={
+            {headerShown:true}
+        }              
         />
       </Stack.Navigator>
 

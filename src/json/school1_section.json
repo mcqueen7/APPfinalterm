@@ -1,0 +1,106 @@
+[
+   {
+      "title": "completion",
+      "data": [
+            {
+                "title":"北部",
+                "completion":"87",
+                "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore1_icon.png?raw=true"
+            },
+            {
+                "title":"中部",
+                "completion":"0",
+                "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2_icon.png?raw=true"
+            },{
+                "title":"南部",
+                "completion":"0",
+                "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3_icon.png?raw=true"
+            },{
+                "title":"東部",
+                "completion":"0",
+                "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4_icon.png?raw=true"
+            }
+        ]
+   },
+   {
+      "title": "北部",
+      "data": [
+         {
+            "label":"ColleGo!新手上路",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore1.png?raw=true"
+         },
+         {
+            "label":"探索我的興趣",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2.png?raw=true"
+         },
+         {
+            "label":"探索我的能力",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3.png?raw=true"
+         },
+         {
+            "label":"探索我的夢想職業",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         }
+      ]
+   },
+   {
+    "title": "中部",
+    "data": [
+       {
+          "label":"認識學群",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet1.png?raw=true"
+       },
+       {
+          "label":"認識學類學系",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet2.png?raw=true"
+       },
+       {
+          "label":"了解學校與職業",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet3.png?raw=true"
+       },
+       {
+          "label":"我的學類體驗",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet4.png?raw=true"
+       }
+    ]
+ },
+ {
+   "title": "南部",
+   "data": [
+      {
+         "label":"找到我想上的課",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn1.png?raw=true"
+      },
+      {
+         "label":"認識我的彈性學習時間",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn2.png?raw=true"
+      },
+      {
+         "label":"檢核我的彈性學習時間",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn3.png?raw=true"
+      },
+      {
+         "label":"我的自主學習成果",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
+      }
+   ]
+},
+ {
+    "title": "東部",
+    "data": [
+       {
+          "label":"這學年的學習歷程",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare1.png?raw=true"
+       },
+       {
+          "label":"探索我的興趣",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare2.png?raw=true"
+       },
+       {
+          "label":"探索我的能力",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare3.png?raw=true"
+       }
+    ]
+ }
+ 
+]
