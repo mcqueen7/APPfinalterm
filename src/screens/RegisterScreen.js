@@ -32,6 +32,7 @@ const RegisterScreen = () => {
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [name, setName] = useState('');
+   const adrs="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU";
    const { colorMode } = useColorMode();
    const rotation = useSharedValue(0);
    const btnWidth = useSharedValue("100%");

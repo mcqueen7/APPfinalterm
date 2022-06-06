@@ -64,7 +64,7 @@ const PersonalStack = () => {
             },
             headerTitleStyle: {
               color:colorMode=="light"?"#000000":"#FFFFFF",
-              fontSize:20,
+              fontSize:30,
             },
           }}
         />
