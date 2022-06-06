@@ -8,7 +8,7 @@ import SchoolBoxes from "../components/SchoolBoxes";
 
 
 
-const TaipeiSchoolDetailScreen = (navigation) => {   
+const DepartmentDetailScreen = (navigation) => {   
     const BGcolor=useColorModeValue("#FFFFFF","#313131");
     const renderSectionHeader = ({section}) => {   
         if(section.title=="completion")  { 
@@ -67,4 +67,4 @@ const TaipeiSchoolDetailScreen = (navigation) => {
 };
 
 
-export default TaipeiSchoolDetailScreen;
+export default DepartmentDetailScreen;

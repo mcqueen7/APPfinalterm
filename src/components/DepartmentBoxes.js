@@ -4,19 +4,22 @@ import {Box,Button,Center,HStack,Text, VStack,Image,Pressable, useColorModeValue
 import { ImageBackground } from "react-native";
 // import { useNavigation } from '@react-navigation/native';
 
-const GradeBoxes = ({boxdata}) => {
+const DepartmentBoxes = ({boxdata}) => {
   const textColor1=useColorModeValue("#000000","#000000");
   // const navigation = useNavigation(); 
     return( 
         <Pressable onPress={()=>alert("學校網頁")}>
-        <Center mt="20px" w="160px" mx="15px" h="160px" bgColor="#92AFEC"  borderRadius={12} 
-            shadow={7}>
-            <ImageBackground source={{uri:boxdata.image}} resizeMode="cover" style={styles.bg} >
-              <Center mt="100px" w="130" h="30px" backgroundColor={"#FFF1CD"} borderRadius={15} >
+        <HStack mt="20px" w="160px" mx="15px" h="160px" bgColor="#92AFEC"  borderRadius={12} 
+            shadow={7} space={4} alignItems="center">
+        
+          <ImageBackground source={{uri:boxdata.image}} resizeMode="cover" style={styles.bg} >
+              <Center mt="10px" w="130" h="30px" backgroundColor={"#FFF1CD"} borderRadius={15} >
                 <Text textAlign={"center"} fontSize={12} color={textColor1}>{boxdata.label}</Text>
               </Center>
-            </ImageBackground>
-        </Center>
+          </ImageBackground>
+          
+      
+        </HStack>
         </Pressable>
     );
 };
@@ -32,4 +35,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GradeBoxes;
+export default DepartmentBoxes;

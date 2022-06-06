@@ -4,7 +4,7 @@ import {Box,Button,Center,HStack,Text, VStack,Image,Pressable, useColorModeValue
 import { ImageBackground } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 
-const GradeBoxes = ({boxdata}) => {
+const SchoolBoxes = ({boxdata}) => {
   const textColor1=useColorModeValue("#000000","#000000");
   const navigation = useNavigation(); 
     return( 
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
     },
   });
 
-export default GradeBoxes;
+export default SchoolBoxes;
