@@ -48,8 +48,9 @@ const updateUserAsync = createAsyncThunk(
 const initialState = {
    general: {
       name: "",
+      schoolname:"",
       email: "",
-      adrs: "",
+      adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
       tel: ""
    },
    login: {

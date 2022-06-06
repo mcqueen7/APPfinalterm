@@ -43,11 +43,10 @@ const PersonalScreen = ({ navigation }) => {
 // console.log(navigation);
     const BGcolor=useColorModeValue("#FFFFFF","#000000");
     return ( 
-     <Box bgColor={"white"} w="100%" h="100%">
+     <Box bgColor={"white"} w="102%" h="100%">
         <SectionList
-            padding={0}
+            paddingRight={0}
             margin={0}
-            width="420px"
             sections={sections} 
             contentContainerStyle={{ paddingHorizontal: 0 }}
             stickySectionHeadersEnabled={false}

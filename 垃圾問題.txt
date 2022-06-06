@@ -15,3 +15,5 @@ onpress 自動觸發(安卓)
 
 pressable 沒反應(安卓) 網路上很多說法 改zindex 父子position關係設定 import來源選RN...等等等
 共通點是 他們都說IOS沒這問題還有我全試了全都沒用-最後直接改用button 
+
+排版用cneter 或是 alignitem= center 東西不會在正中間 跟裝置有關 不同裝置位置不同 結果是因為SectionListScrollBar 預留的小縫
