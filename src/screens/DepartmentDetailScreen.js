@@ -2,12 +2,13 @@ import React from "react";
 import {  StyleSheet } from "react-native";
 import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HStack, Box, useColorModeValue, } from 'native-base';
 
-import sections from "../json/school1_section.json";
+import sections from "../json/department_section.json";
 import SchoolCompletion from "../components/SchoolCompletion";
 import SchoolBoxes from "../components/SchoolBoxes";
 
 
-const HomeDetailScreen = (navigation) => {   
+
+const DepartmentDetailScreen = (navigation) => {   
     const BGcolor=useColorModeValue("#FFFFFF","#313131");
     const renderSectionHeader = ({section}) => {   
         if(section.title=="completion")  { 
@@ -66,4 +67,4 @@ const HomeDetailScreen = (navigation) => {
 };
 
 
-export default HomeDetailScreen;
+export default DepartmentDetailScreen;
