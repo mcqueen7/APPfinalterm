@@ -30,7 +30,7 @@ const HomeDetailScreen = (navigation) => {
         }
         else return (
         <>
-            <Heading  fontSize="24" ml="30px" mt="30px">{section.title}</Heading>
+            <Heading  fontSize="24" ml="20px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
                 height={200}
