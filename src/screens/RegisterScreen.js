@@ -55,7 +55,7 @@ const RegisterScreen = () => {
    }, [btnWidth.value]);
 
    const onRegister = () => {
-      dispatch(registerAsync({ name, email, password }))
+      dispatch(registerAsync({ name, email, password,adrs }))
    }
 
 

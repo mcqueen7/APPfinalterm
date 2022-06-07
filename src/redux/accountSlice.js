@@ -18,9 +18,9 @@ const loginAsync = createAsyncThunk(
 
 const registerAsync = createAsyncThunk(
    'account/register',
-   async ({ name, email, password }, { rejectWithValue }) => {
+   async ({ name, email, password,adrs }, { rejectWithValue }) => {
       try {
-         const { data } = await register({ name, email, password });
+         const { data } = await register({ name, email, password,adrs });
          // The value we return becomes the `fulfilled` action payload
          return data; 
       } catch (err) {
