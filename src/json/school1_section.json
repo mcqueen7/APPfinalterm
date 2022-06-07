@@ -26,19 +26,32 @@
       "title": "北部",
       "data": [
          {
-            "label":"ColleGo!新手上路",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore1.png?raw=true"
+            "label":"臺北市",
+            "number":"26",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Emblem_of_Taipei_City.svg/1812px-Emblem_of_Taipei_City.svg.png"
          },
          {
-            "label":"探索我的興趣",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2.png?raw=true"
+            "label":"新北市",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/New_Taipei_City_Government_Logo.svg/1200px-New_Taipei_City_Government_Logo.svg.png"
          },
          {
-            "label":"探索我的能力",
+            "label":"基隆市",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3.png?raw=true"
          },
          {
-            "label":"探索我的夢想職業",
+            "label":"新竹市",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"桃園市",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2.png?raw=true"
+         },
+         {
+            "label":"新竹縣",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3.png?raw=true"
+         },
+         {
+            "label":"宜蘭縣",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
          }
       ]
@@ -47,40 +60,52 @@
     "title": "中部",
     "data": [
        {
-          "label":"認識學群",
+          "label":"臺中市",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet1.png?raw=true"
        },
        {
-          "label":"認識學類學系",
+          "label":"苗栗縣",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet2.png?raw=true"
        },
        {
-          "label":"了解學校與職業",
+          "label":"彰化縣",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet3.png?raw=true"
        },
        {
-          "label":"我的學類體驗",
+          "label":"南投縣",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet4.png?raw=true"
-       }
+       },
+       {
+          "label":"雲林縣",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet4.png?raw=true"
+       } 
     ]
  },
  {
    "title": "南部",
    "data": [
       {
-         "label":"找到我想上的課",
+         "label":"高雄市",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn1.png?raw=true"
       },
       {
-         "label":"認識我的彈性學習時間",
+         "label":"臺南市",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn2.png?raw=true"
       },
       {
-         "label":"檢核我的彈性學習時間",
+         "label":"嘉義市",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn3.png?raw=true"
       },
       {
-         "label":"我的自主學習成果",
+         "label":"嘉義縣",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
+      },
+      {
+         "label":"屏東縣",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn3.png?raw=true"
+      },
+      {
+         "label":"澎湖縣",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
       }
    ]
@@ -89,16 +114,12 @@
     "title": "東部",
     "data": [
        {
-          "label":"這學年的學習歷程",
+          "label":"花蓮縣",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare1.png?raw=true"
        },
        {
-          "label":"探索我的興趣",
+          "label":"臺東縣",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare2.png?raw=true"
-       },
-       {
-          "label":"探索我的能力",
-          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare3.png?raw=true"
        }
     ]
  }

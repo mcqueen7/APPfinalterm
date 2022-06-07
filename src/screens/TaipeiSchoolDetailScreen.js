@@ -4,7 +4,7 @@ import {NativeBaseProvider,SectionList,Heading,Center,Text,FlatList, VStack, HSt
 
 import sections from "../json/school2_section.json";
 import SchoolCompletion from "../components/SchoolCompletion";
-import SchoolBoxes from "../components/DepartmentBoxes";
+import DepartmentBoxes from "../components/DepartmentBoxes";
 
 
 
@@ -31,13 +31,13 @@ const TaipeiSchoolDetailScreen = (navigation) => {
         }
         else return (
         <>
-            <Heading  fontSize="24" ml="30px" mt="30px">{section.title}</Heading>
+            <Heading  fontSize="24" ml="20px" mt="30px">{section.title}</Heading>
             <>
             <FlatList
                 height={200}
                 horizontal={true}
                 data={section.data}
-                renderItem={({ item }) => <SchoolBoxes boxdata={item} navigation={navigation}/>}
+                renderItem={({ item }) => <DepartmentBoxes boxdata={item} navigation={navigation}/>}
                 showsHorizontalScrollIndicator={false}
                 stickySectionHeadersEnabled={false}
                 keyExtractor={ (item)=> item.label}

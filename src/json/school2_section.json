@@ -3,101 +3,134 @@
       "title": "completion",
       "data": [
             {
-                "title":"北部",
-                "completion":"87",
+                "title":"公立",
+                
                 "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore1_icon.png?raw=true"
             },
             {
-                "title":"中部",
-                "completion":"0",
+                "title":"私立",
+                
                 "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2_icon.png?raw=true"
             },{
-                "title":"南部",
-                "completion":"0",
+                "title":"一般大學",
+                
                 "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3_icon.png?raw=true"
             },{
-                "title":"東部",
-                "completion":"0",
+                "title":"技職學院",
+              
                 "icon":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4_icon.png?raw=true"
             }
         ]
    },
    {
-      "title": "國立大學",
+      "title": "公立一般大學",
       "data": [
          {
-            "label":"國立台北教育大學",
-            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore1.png?raw=true"
+            "label":"國立臺北教育大學",
+            "number":"14",
+            "image":"https://upload.wikimedia.org/wikipedia/zh/thumb/6/62/National_Taipei_University_of_Education_logo.svg/1200px-National_Taipei_University_of_Education_logo.svg.png"
          },
          {
-            "label":"探索我的興趣",
+            "label":"國立政治大學",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore2.png?raw=true"
          },
          {
-            "label":"探索我的能力",
+            "label":"國立臺灣大學",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore3.png?raw=true"
          },
          {
-            "label":"探索我的夢想職業",
+            "label":"國立臺灣師範大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"臺北市立大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"國立臺北藝術大學",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
          }
       ]
    },
    {
-    "title": "中部",
+    "title": "公立技專院校",
     "data": [
-       {
-          "label":"認識學群",
-          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet1.png?raw=true"
-       },
-       {
-          "label":"認識學類學系",
-          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet2.png?raw=true"
-       },
-       {
-          "label":"了解學校與職業",
-          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet3.png?raw=true"
-       },
-       {
-          "label":"我的學類體驗",
-          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Meet4.png?raw=true"
-       }
+         {
+            "label":"國立臺灣科技大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"國立臺北科技大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"國立臺北護理健康大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"國立臺北商業大學",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         },
+         {
+            "label":"國立臺灣戲曲學院",
+            "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Explore4.png?raw=true"
+         }
     ]
  },
  {
-   "title": "南部",
+   "title": "私立一般大學",
    "data": [
       {
-         "label":"找到我想上的課",
+         "label":"中國文化大學",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn1.png?raw=true"
       },
       {
-         "label":"認識我的彈性學習時間",
+         "label":"世新大學",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn2.png?raw=true"
       },
       {
-         "label":"檢核我的彈性學習時間",
+         "label":"銘傳大學",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn3.png?raw=true"
       },
       {
-         "label":"我的自主學習成果",
+         "label":"實踐大學",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
+      },
+      {
+         "label":"大同大學",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
+      },
+      {
+         "label":"臺北醫學大學",
+         "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
+      },
+      {
+         "label":"康寧大學",
          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Learn4.png?raw=true"
       }
    ]
 },
  {
-    "title": "東部",
+    "title": "私立技專院校",
     "data": [
        {
-          "label":"這學年的學習歷程",
+          "label":"中國科技大學",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare1.png?raw=true"
        },
        {
-          "label":"探索我的興趣",
+          "label":"德明財經科技大學",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare2.png?raw=true"
        },
        {
-          "label":"探索我的能力",
+          "label":"中華科技大學",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare3.png?raw=true"
+       },
+       {
+          "label":"臺北城市科技大學",
+          "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare3.png?raw=true"
+       },
+       {
+          "label":"馬偕醫護管理專科學校",
           "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/Prepare3.png?raw=true"
        }
     ]
