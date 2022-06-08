@@ -79,6 +79,16 @@ export const readUser = async () => {
   }
 
 }
+export const addmsg = async ({ msg}) => {
+  await setDoc(doc(db, "msgs",), {
+    senderName:"aaa",
+    timeStamp: "111",
+    message: "FUCK YOU",
+    photourl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
+
+  });
+  return userCredential.user;
+}
 
 export const updateUser = async (userInfo) => {
   const { uid } = auth.currentUser;
