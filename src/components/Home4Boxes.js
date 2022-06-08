@@ -42,7 +42,7 @@ const Home4Boxes = ({boxdata}) => {
                 </Pressable>
             </Box>
             <Box w="100%" h="120px" mx="3" my="2" justifyContent={"center"} bgColor={BGcolor} borderRadius={12}>
-                <Pressable onPress={()=>navigation.navigate('HomeDetailscreen',boxdata)}>
+                <Pressable onPress={()=>navigation.navigate('PomodoroTimerscreen',boxdata)}>
                 <HStack justifyContent={"flex-start"} alignItems={"center"}> 
                       
                  {/* <ImageBackground source={image} resizeMode="contain" style={styles.bg} imageStyle={{borderRadius:10}}> 
