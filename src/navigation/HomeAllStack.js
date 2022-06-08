@@ -11,6 +11,7 @@ import HomeAllScreen from "../screens/HomeAllScreen"
 import HomeDetailScreen from "../screens/HomeDetailScreen"
 import TaipeiSchoolDetailScreen from "../screens/TaipeiSchoolDetailScreen"
 import DepartmentDetailScreen from "../screens/DepartmentDetailScreen"
+import PomodoroTimerscreen from "../components/PomodoroTimer"
 const Stack = createNativeStackNavigator(); 
 
 
@@ -53,6 +54,13 @@ const HomeAllStack = () => {
         <Stack.Screen 
           name="DepartmentDetailscreen" 
           component={DepartmentDetailScreen}
+          options={
+            {headerShown:true}
+        }              
+        />
+        <Stack.Screen 
+          name="PomodoroTimerscreen" 
+          component={PomodoroTimerscreen}
           options={
             {headerShown:true}
         }              
