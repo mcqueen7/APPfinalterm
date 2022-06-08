@@ -107,18 +107,22 @@
       "data": [
          {
             "title":"任務管理",
+            "detail":"查看自己的行程/代辦事項",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          },
          {
             "title":"專注時間",
+            "detail":"查看自己的行程/代辦事項",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          },
          {
             "title":"探索任務",
+            "detail":"查看自己的行程/代辦事項",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          },
          {
             "title":"探索人脈",
+            "detail":"查看自己的行程/代辦事項",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          }
       ]  
