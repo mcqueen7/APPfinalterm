@@ -9,8 +9,15 @@ import {
 import {
   getFirestore,
   doc,
+  addDoc,
   setDoc,
   getDoc,
+  serverTimestamp,
+  collection,
+  query,
+  orderBy,
+  limit,
+  getDocs,
 } from "firebase/firestore";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -26,7 +33,6 @@ const firebaseConfig = {
 };
 
 const app_length = getApps().length > 0;
-
 // Initialize Firebase
 const app = app_length ? getApp() : initializeApp(firebaseConfig);
 
@@ -53,7 +59,8 @@ export const register = async ({ name, email, password }) => {
     schoolname:"學校尚未填寫",
     email: "",
     adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
-    tel: ""
+    tel: "",
+    msgNum: 0,
   });
   return userCredential.user;
 }
@@ -79,15 +86,55 @@ export const readUser = async () => {
   }
 
 }
-export const addmsg = async ({ msg}) => {
-  await setDoc(doc(db, "msgs",), {
-    senderName:"aaa",
-    timeStamp: "111",
-    message: "FUCK YOU",
-    photourl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
+export const addMsg = async (data) => {
+  
+  const{msg,username,userphoto}=data;
+ 
+  //console.log(msg);
+  //console.log(data);console.log(data.msg);
+  // console.log(auth.currentUser);
+  //const username=name?name:"訪客";
+  try {
+    // const docRef = doc(db, "msgs",uid);
+    const docRef = await addDoc(collection(db, "msgs"), {
+      SenderName: username,
+      timeStamp: serverTimestamp(),
+      messege:msg,
+      photourl: userphoto,
+    });
+    // await setDoc(doc(db, "msgs","nB8yCKzY9gOU2Ojb1QVJCij1XVH4"), {
+    //   SenderName:"ASS123",
+    //   timeStamp: Date.now(),
+    //   messege:"FUCK"+msg,
+    //   photourl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
+    // });
 
-  });
-  return userCredential.user;
+  } catch (e) {
+    console.log("FUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK") 
+  //  console.log(e)
+  }
+}
+export const readMsgs = async () => {
+  
+  try {
+    
+    const q = query(collection(db, "msgs"),orderBy("timeStamp"));
+    const querySnapshot=await getDocs(q);
+    //console.log(querySnapshot);
+    const data=[];
+    querySnapshot.forEach((doc)=>{
+      // doc.data() is never undefined for query doc snapshots
+     // console.log(" => ", doc.data());
+     data.push(doc.data());
+    });
+    console.log("RRRRRRRRRRRRR:"+data);
+    //console.log("RRRRRRRRRRRRRP:"+JSON.stringify(data));
+      return data;
+    
+  } catch (e) {
+    console.log("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF");
+    console.log(e)
+  }
 }
 
 export const updateUser = async (userInfo) => {

@@ -6,7 +6,7 @@ import accountReducer from "./accountSlice";
 // import settingsReducer from "./settingsSlice"
 //import contentReducer from "./contentSlice";
 import articleNumReducer from "./articleNumSlice"
-
+import msgsReduer from "./msgsSlice"
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
@@ -18,6 +18,7 @@ export const store = configureStore({
     //settings: settingsReducer,
     //content: contentReducer,
     articleNum: articleNumReducer,
+    msgs: msgsReduer,
   },
   devTools: process.env.NODE_ENV !== 'production',
   middleware: [thunk]

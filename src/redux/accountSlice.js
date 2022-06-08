@@ -20,7 +20,7 @@ const registerAsync = createAsyncThunk(
    'account/register',
    async ({ name, email, password,adrs }, { rejectWithValue }) => {
       try {
-         const { data } = await register({ name, email, password,adrs });
+         const { data } = await register({ name, email, password });
          // The value we return becomes the `fulfilled` action payload
          return data; 
       } catch (err) {
@@ -47,11 +47,12 @@ const updateUserAsync = createAsyncThunk(
 // Part1: Define Slice (including reducers and actions)
 const initialState = {
    general: {
-      name: "",
+      name: "訪客",
       schoolname:"",
       email: "",
       adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
-      tel: ""
+      tel: "",
+      msgNum:0,
    },
    login: {
       hasLogin: false,
@@ -71,6 +72,8 @@ const accountSlice = createSlice({
       },
       signOut: (state) => {
          logout();
+         state.general.name="訪客";
+         state.general.adrs="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU";
          state.login.hasLogin = false;
       },
       gotoRegister: (state) => {

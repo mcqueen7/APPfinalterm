@@ -43,7 +43,7 @@ const HomeTabs = () => {
         name="Trace" 
         component={HomeTraceStack} 
         options={{
-          title: "追蹤",
+          title: "留言板",
         }}
       />
       <Tab2.Screen 
