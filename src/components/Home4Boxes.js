@@ -6,7 +6,8 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import { useNavigation } from '@react-navigation/native';
 
 const Home4Boxes = ({boxdata}) => {
-    const textColor=useColorModeValue("#000000","#000000");
+    const textColor1=useColorModeValue("#000000","#ECECEC");
+    const textColor2=useColorModeValue("#525252","#D8D8D8");
     const BGcolor=useColorModeValue("#F2F2F2","#6E6E6E");
     const navigation = useNavigation(); 
     const image = { uri:"https://raw.githubusercontent.com/mcqueen7/APPmidterm/master/src/images/science_icon.png" };
@@ -23,9 +24,9 @@ const Home4Boxes = ({boxdata}) => {
                         
                 <VStack my="5" h="60" w="200"  ml="30" borderRadius={12} justifyContent={"flex-start"} alignItems={"flex-start"}>
                             <Box my="1">
-                                <Text bold fontSize={20} _dark={{color:"#232323"}}>{boxdata[0].title}</Text>
+                                <Text bold fontSize={20} color={textColor1}>{boxdata[0].title}</Text>
                             </Box>                          
-                            <Text fontSize={12} _dark={{color:"#525252"} }>{boxdata[0].detail}</Text>
+                            <Text fontSize={12} color={textColor2}>{boxdata[0].detail}</Text>
                 </VStack>
                       
                     {/* <Flex direction="row" flexWrap={"wrap"} alignItems="center" justifyContent="center">
@@ -49,9 +50,9 @@ const Home4Boxes = ({boxdata}) => {
                         
                 <VStack my="5" h="60" w="200"  ml="30" borderRadius={12} justifyContent={"flex-start"} alignItems={"flex-start"}>
                             <Box my="1">
-                                <Text bold fontSize={20} _dark={{color:"#232323"}}>{boxdata[1].title}</Text>
+                                <Text bold fontSize={20} color={textColor1}>{boxdata[1].title}</Text>
                             </Box>                          
-                            <Text fontSize={12} _dark={{color:"#525252"} }>{boxdata[1].detail}</Text>
+                            <Text fontSize={12} color={textColor2}>{boxdata[1].detail}</Text>
                 </VStack>
                       
                     {/* <Flex direction="row" flexWrap={"wrap"} alignItems="center" justifyContent="center">
@@ -75,9 +76,9 @@ const Home4Boxes = ({boxdata}) => {
                         
                 <VStack my="5" h="60" w="200"  ml="30" borderRadius={12} justifyContent={"flex-start"} alignItems={"flex-start"}>
                             <Box my="1">
-                                <Text bold fontSize={20} _dark={{color:"#232323"}}>{boxdata[2].title}</Text>
+                                <Text bold fontSize={20} color={textColor1}>{boxdata[2].title}</Text>
                             </Box>                          
-                            <Text fontSize={12} _dark={{color:"#525252"} }>{boxdata[2].detail}</Text>
+                            <Text fontSize={12} color={textColor2}>{boxdata[2].detail}</Text>
                 </VStack>
                       
                     {/* <Flex direction="row" flexWrap={"wrap"} alignItems="center" justifyContent="center">
@@ -101,9 +102,9 @@ const Home4Boxes = ({boxdata}) => {
                         
                 <VStack my="5" h="60" w="200"  ml="30" borderRadius={12} justifyContent={"flex-start"} alignItems={"flex-start"}>
                             <Box my="1">
-                                <Text bold fontSize={20} _dark={{color:"#232323"}}>{boxdata[3].title}</Text>
+                                <Text bold fontSize={20} color={textColor1}>{boxdata[3].title}</Text>
                             </Box>                          
-                            <Text fontSize={12} _dark={{color:"#525252"} }>{boxdata[3].detail}</Text>
+                            <Text fontSize={12} color={textColor2}>{boxdata[3].detail}</Text>
                 </VStack>
                       
                     {/* <Flex direction="row" flexWrap={"wrap"} alignItems="center" justifyContent="center">

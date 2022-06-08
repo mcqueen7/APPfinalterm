@@ -5,8 +5,8 @@ import { ImageBackground } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 
 const DepartmentBoxes = ({boxdata}) => {
-  const textColor1=useColorModeValue("#232323","#232323");
-  const textColor2=useColorModeValue("#525252","#525252");
+  const textColor1=useColorModeValue("#000000","#C9C9C9");
+  const textColor2=useColorModeValue("#525252","#989898");
   const navigation = useNavigation(); 
     return( 
       <Pressable onPress={()=>navigation.navigate('DepartmentDetailscreen',boxdata)}>
