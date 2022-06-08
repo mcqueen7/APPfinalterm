@@ -14,55 +14,55 @@ import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
 // console.log(sections);
 
-const HomeAllList = (navigation) => {
-    const BGcolor=useColorModeValue("#ffffff","#313131");
+const HomeAllList = ({navigation}) => {
+  const BGcolor=useColorModeValue("#ffffff","#313131");
   const renderSectionHeader = ({section}) => {
     switch (section.type){
         case "big1":
             return null
-        case "8boxes1":
-            return (
-                <>
-                    <HStack mt="30px"><Heading fontSize="24" mr="230px">{section.title}</Heading>
-                    <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}><Heading fontSize="16" pt="3px">More</Heading></Pressable></HStack>
-                    <>
-                    <FlatList
-                        scrollEnabled={false}
-                        alignItems={"center"}
-                        numColumns={4}
-                        data={section.data}
-                        renderItem={({ item }) => <Home8Boxes1 boxdata={item} navigation={navigation}/>}
-                        showsHorizontalScrollIndicator={false}
-                        stickySectionHeadersEnabled={false}
-                        keyExtractor={ item => item.title}
-                    />
-                    </>
-                </>
-            )
-        case "8boxes2":
-            return  (
-                <>
-                    <HStack mt="30px"><Heading fontSize="24" mr="230px">{section.title}</Heading>
-                    <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}><Heading fontSize="16" pt="3px">More</Heading></Pressable></HStack>
-                    <>
-                    <FlatList
-                        scrollEnabled={false}
-                        alignItems={"center"}
-                        numColumns={4}
-                        data={section.data}
-                        renderItem={({ item }) => <Home8Boxes2 boxdata={item} navigation={navigation}/>}
-                        showsHorizontalScrollIndicator={false}
-                        stickySectionHeadersEnabled={false}
-                        keyExtractor={ item => item.title }
-                    />
-                    </>
-                </>
-            )
+        // case "8boxes1":
+        //     return (
+        //         <>
+        //             <HStack mt="30px"><Heading fontSize="24" mr="230px">{section.title}</Heading>
+        //             <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}><Heading fontSize="16" pt="3px">More</Heading></Pressable></HStack>
+        //             <>
+        //             <FlatList
+        //                 scrollEnabled={false}
+        //                 alignItems={"center"}
+        //                 numColumns={4}
+        //                 data={section.data}
+        //                 renderItem={({ item }) => <Home8Boxes1 boxdata={item} navigation={navigation}/>}
+        //                 showsHorizontalScrollIndicator={false}
+        //                 stickySectionHeadersEnabled={false}
+        //                 keyExtractor={ item => item.title}
+        //             />
+        //             </>
+        //         </>
+        //     )
+        // case "8boxes2":
+        //     return  (
+        //         <>
+        //             <HStack mt="30px"><Heading fontSize="24" mr="230px">{section.title}</Heading>
+        //             <Pressable onPress={()=>{alert("做不完了還MORE!!!!!!!!");}}><Heading fontSize="16" pt="3px">More</Heading></Pressable></HStack>
+        //             <>
+        //             <FlatList
+        //                 scrollEnabled={false}
+        //                 alignItems={"center"}
+        //                 numColumns={4}
+        //                 data={section.data}
+        //                 renderItem={({ item }) => <Home8Boxes2 boxdata={item} navigation={navigation}/>}
+        //                 showsHorizontalScrollIndicator={false}
+        //                 stickySectionHeadersEnabled={false}
+        //                 keyExtractor={ item => item.title }
+        //             />
+        //             </>
+        //         </>
+        //     )
         case "4boxes":
             return  (
                 <>
-                    <Heading fontSize="24px" mt="30px">{section.title} </Heading> 
-                    <Home4Boxes  boxdata={section.data}/>
+                    <Heading fontSize="20px" mt="30px" my="10px" mx="5px">{section.title} </Heading> 
+                    <Home4Boxes  boxdata={section.data} navigation={navigation}/>
                 </>
             )  //mr26px
         case "big2":

@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
-import {Box,HStack,Text} from "native-base"
+import {Box,HStack,Text,useColorModeValue} from "native-base"
 import HomeAllScreen from "../screens/HomeAllScreen"
 import HomeDetailScreen from "../screens/HomeDetailScreen"
 import TaipeiSchoolDetailScreen from "../screens/TaipeiSchoolDetailScreen"
@@ -15,22 +15,32 @@ const Stack = createNativeStackNavigator();
 
 
 const HomeAllStack = () => {
+  const BG=useColorModeValue("#FFFFFF","#313131");
+  const textColor1=useColorModeValue("#000000","#ECECEC");
     return (
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={
+          {
+            headerStyle:{
+              backgroundColor:BG,
+            },
+            headerTintColor:textColor1,
+          }
+      }>
+      
         <Stack.Screen 
           name="HomeAllscreen" 
           component={HomeAllScreen}
           options={
             {headerShown:false}
+          
         }       
         />
         <Stack.Screen 
           name="HomeDetailscreen" 
           component={HomeDetailScreen}
           options={
-            {headerShown:true}
-        }      
-         
+            {headerShown:true}   
+          }
         />
           <Stack.Screen 
           name="TaipeiSchoolDetailscreen" 
