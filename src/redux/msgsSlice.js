@@ -62,7 +62,7 @@ const msgsSlice = createSlice({
                 state.messeges.push(doc);
             });
             //state.messeges = { ...state.messeges, ...action.payload};
-            console.log("AFTER"+JSON.stringify(state.messeges));
+           // console.log("AFTER"+JSON.stringify(state.messeges));
 
          })
         //  .addCase(addMsgsAsync.fulfilled, (state, action) => {
