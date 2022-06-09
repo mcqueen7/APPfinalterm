@@ -112,17 +112,17 @@
          },
          {
             "title":"專注時間",
-            "detail":"查看自己的行程/代辦事項",
+            "detail":"設定自己的專注時間",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          },
          {
             "title":"探索任務",
-            "detail":"查看自己的行程/代辦事項",
+            "detail":"看看大家都在做些什麼吧",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          },
          {
             "title":"探索人脈",
-            "detail":"查看自己的行程/代辦事項",
+            "detail":"查看不同校系的其他用戶",
             "image":"https://github.com/mcqueen7/APPmidterm/blob/master/src/images/computer_icon.png"
          }
       ]  
