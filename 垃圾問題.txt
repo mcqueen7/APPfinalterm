@@ -17,3 +17,7 @@ pressable 沒反應(安卓) 網路上很多說法 改zindex 父子position關係
 共通點是 他們都說IOS沒這問題還有我全試了全都沒用-最後直接改用button 
 
 排版用cneter 或是 alignitem= center 東西不會在正中間 跟裝置有關 不同裝置位置不同 結果是因為SectionListScrollBar 預留的小縫
+
+東西一堆就卡到爆 剛開始功能少的時候沒事
+時間不夠
+匚豪啟動混仙人模式
