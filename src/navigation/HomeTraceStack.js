@@ -1,9 +1,9 @@
 import React, {useState,useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {Box,Center,FormControl,HStack,VStack,Input,Text,Button, useColorMode, FlatList} from "native-base"
-import { addmsg, readMsgs } from "../api/firebase";
+import { addmsg, readMsgs ,updateMsgNum} from "../api/firebase";
 import { addMsgsAsync,readMsgsAsync,selectmsgs} from "../redux/msgsSlice"
-import { selectGeneral} from "../redux/accountSlice";
+import { addMsgNum, selectGeneral, updateUserAsync} from "../redux/accountSlice";
 import sections from '../json/personal_section.json';
 import MsgBox from "../components/MsgBox";
 const HomeTraceStack = () => {
@@ -15,6 +15,7 @@ const HomeTraceStack = () => {
   console.log("msg msgm msg ："+msg);
   const username=general.name?general.name:"訪客";
   const userphoto=general.adrs;
+  const msgNum=general.msgNum;
   const { colorMode } = useColorMode();
   const [msg, setMsg] = useState();
 //   const formLabelStyle = {
@@ -33,23 +34,20 @@ const dispatch = useDispatch();
  const onAddMsg=()=>{
   dispatch(addMsgsAsync({msg,username,userphoto}));//username+userphoto
  }
- const msgbox = ({item}) => {
-  return(
-    <Box w="100%">
-      <Text>item</Text>
-    </Box>
-
-  );
- }
+ const onUpdate = () => {
+  dispatch(addMsgNum());
+   updateMsgNum(general.msgNum);
+}
 
   //const text="幹";
   return (
     <Center h="100%" bgColor={"blue.100"} padding="3%">
       <VStack w="100%" >
-        <Box h="90%" bgColor={"white"} borderTopRadius="50"> 
+        <Box paddingTop={"2%"} h="90%" bgColor={"white"} borderTopRadius="30"> 
         {/* <Text>{msg}</Text> */}
           <FlatList
-            padding={"5%"}
+            paddingX={"5%"}
+            paddingBottom={"0%"}
             data={messeges}
             renderItem={({ item }) => <MsgBox data={item} />}
             showsHorizontalScrollIndicator={false}
@@ -66,7 +64,7 @@ const dispatch = useDispatch();
                />
             </FormControl>
             {/* <Button  onPress={()=>{ console.log("ASJDIAJSDI："+msgs+username+userphoto);onAddMsg();readMsgsAsync();setMsg("")}}>留言</Button> */}
-            <Button  onPress={()=>{ console.log("GGGGGGGGGGG："+JSON.stringify(messeges)+"MSG MSG MSG"+msgs);onAddMsg();dispatch(readMsgsAsync());setMsg("")}}>留言</Button>
+            <Button  onPress={()=>{ console.log("GGGGGGGGGGG："+JSON.stringify(messeges)+"MSG MSG MSG"+msgs);onAddMsg();onUpdate();dispatch(readMsgsAsync());setMsg("")}}>留言</Button>
           </HStack>
         </Box>
 

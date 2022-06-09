@@ -26,7 +26,7 @@ const PersonalFile = ({ personaldata }) => {
                 <Text fontSize={16}>文章數</Text>
             </Center>
             <Center mx={5} w="70px">
-                <Text fontSize={16}>{personaldata.commentNum}</Text>
+                <Text fontSize={16}>{general.msgNum}</Text>
                 <Text fontSize={16}>留言數</Text>
             </Center>
             <Center mx={5} w="70px"> 

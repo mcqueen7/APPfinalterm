@@ -18,6 +18,7 @@ import {
   orderBy,
   limit,
   getDocs,
+  updateDoc,
 } from "firebase/firestore";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
@@ -144,6 +145,17 @@ export const updateUser = async (userInfo) => {
     await setDoc(docRef, userInfo);
     const docSnap = await getDoc(docRef);
     return docSnap.data();
+  } catch (e) {
+    console.log(e)
+  }
+}
+export const updateMsgNum = async (num) => {
+  const { uid } = auth.currentUser;
+  try {
+    const docRef = doc(db, "users", uid);
+    await updateDoc(docRef, {
+      msgNum:num,
+    });
   } catch (e) {
     console.log(e)
   }

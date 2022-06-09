@@ -79,6 +79,9 @@ const accountSlice = createSlice({
       gotoRegister: (state) => {
          state.login.hasAccount = false;
       },
+      addMsgNum: (state) => {
+         state.general.msgNum=state.general.msgNum+1;
+      },
       gotoLogin: (state) => {
          state.login.hasAccount = true;
       }
@@ -131,7 +134,7 @@ export const selectErrorMsg = (state) => state.account.errMsg;
 export const selectStatus = (state) => state.account.status;
 
 // export actions to global
-export const { setGeneralAccountInfo, gotoRegister, gotoLogin, signOut } = accountSlice.actions;
+export const { setGeneralAccountInfo, gotoRegister, gotoLogin, signOut,addMsgNum } = accountSlice.actions;
 
 // export async function to global
 export { loginAsync, registerAsync, readUserAsync, updateUserAsync }
