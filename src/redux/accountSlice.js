@@ -52,7 +52,7 @@ const initialState = {
       email: "",
       adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
       tel: "",
-      msgNum:0,
+      msgNum:"0",
    },
    login: {
       hasLogin: false,

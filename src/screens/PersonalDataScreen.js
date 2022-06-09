@@ -11,7 +11,7 @@ const PersonalDataScreen = () => {
    const [email, setEmail] = useState();
    const [adrs, setAdrs] = useState();
    const [tel, setTel] = useState();
-
+   const msgNum=general.msgNum
    const dispatch = useDispatch();
 
    const { colorMode } = useColorMode();
@@ -26,7 +26,7 @@ const PersonalDataScreen = () => {
    }
 
    const onUpdate = () => {
-      dispatch(updateUserAsync({ name, schoolname, email, adrs, tel }));
+      dispatch(updateUserAsync({ name, schoolname, email, adrs, tel,msgNum }));
    }
 
    useEffect(() => {

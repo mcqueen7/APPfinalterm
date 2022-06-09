@@ -62,6 +62,7 @@ export const register = async ({ name, email, password }) => {
     adrs: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgkamA8OGUcB1Lbo3S28cjZkaecyTFI6R6ww&usqp=CAU",
     tel: "",
     msgNum: 0,
+    aaa:"asdasd"
   });
   return userCredential.user;
 }
