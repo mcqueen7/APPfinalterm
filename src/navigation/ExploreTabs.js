@@ -12,7 +12,7 @@ import {Box,Center,HStack,StatusBar,Text, useColorMode} from "native-base"
 import Grade1Stack from "./Grade1Stack";
 import Grade2Stack from "./Grade1Stack";
 import Grade3Stack from "./Grade1Stack";
-import ReduxTestScreen from "../screens/ReduxTestScreen";
+import ReduxTestScreen from "../screens/reduxTestScreen";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 

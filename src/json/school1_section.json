@@ -32,26 +32,32 @@
          },
          {
             "label":"新北市",
+            "number":"20",
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/New_Taipei_City_Government_Logo.svg/1200px-New_Taipei_City_Government_Logo.svg.png"
          },
          {
             "label":"基隆市",
+            "number":"19",
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Seal_of_Keelung.svg/1024px-Seal_of_Keelung.svg.png"
          },
          {
             "label":"新竹市",
+            "number":"10",
             "image":"https://scontent.ftpe7-4.fna.fbcdn.net/v/t39.30808-6/271241805_5060519553992729_3207972981847026940_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=AZFGUhivTkMAX-2Nsc9&_nc_oc=AQmPeshWOKe7tUkHUwa3iOmczygjJuqGqkKlXOZvrLHLsA8hSUpcw6nqM2dcgxhod9c&_nc_ht=scontent.ftpe7-4.fna&oh=00_AT9rlrY4goL9NHB5gJ8paUvn9hfdb2PdzLQmOWQaVBZY8w&oe=62A49105"
          },
          {
             "label":"桃園市",
+            "number":"20",
             "image":"https://www.tycg.gov.tw/fckdowndoc?file=/logo_b2.png&flag=pic"
          },
          {
             "label":"新竹縣",
+            "number":"18",
             "image":"https://ws.hsinchu.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvMS9ja2ZpbGUvZDc1YTVhNTQtN2JjMC00ZmNhLWE4ZWUtODNkYWY4YjRiYThkLnBuZw%3d%3d&n=5paw56u557ij57ij5b69LnBuZw%3d%3d&icon=.png"
          },
          {
             "label":"宜蘭縣",
+            "number":"5",
             "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Seal_of_Yilan_County.svg/1024px-Seal_of_Yilan_County.svg.png"
          }
       ]
@@ -61,22 +67,27 @@
     "data": [
        {
           "label":"臺中市",
+          "number":"9",
           "image":"https://www.taichung.gov.tw/media/264478/25211730971.gif"
        },
        {
           "label":"苗栗縣",
+          "number":"7",
           "image":"https://webws.miaoli.gov.tw/001/Upload/402/relpic/9011/127/f909cc1d-1fc6-4b6a-af02-5e52d0b5d7be.jpg"
        },
        {
           "label":"彰化縣",
+          "number":"10",
           "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Emblem_of_Changhua_County.svg/722px-Emblem_of_Changhua_County.svg.png"
        },
        {
           "label":"南投縣",
+          "number":"11",
           "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Seal_of_Nantou_County.svg/300px-Seal_of_Nantou_County.svg.png"
        },
        {
           "label":"雲林縣",
+          "number":"3",
           "image":"https://www.newton.com.tw/img/3/250/nBnauQ2M0ImMmJmZzQzM1gzMjFjM3IGZxUGMwATN5U2N4E2MzYWYzADM3I2LtVGdp9yYpB3LltWahJ2Lt92YuUHZpFmYuMmczdWbp9yL6MHc0RHa.jpg"
        } 
     ]
@@ -86,26 +97,32 @@
    "data": [
       {
          "label":"高雄市",
+         "number":"15",
          "image":"https://ws.kcg.gov.tw/001/KcgUploadFiles/UserFiles/b2/Kao_logo.gif"
       },
       {
          "label":"臺南市",
+         "number":"3",
          "image":"https://w3fs.tainan.gov.tw/001/Upload/1/relpic/9749/143948/3898762b-0f4e-44bc-adf5-415c4fef82a1@710x470.jpg"
       },
       {
          "label":"嘉義市",
+         "number":"10",
          "image":"https://icmp-ws.chiayi.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvMzk5L2NrZmlsZS9iOGE2M2FjZC04NDk2LTRhMzQtYTEzZi00ZDNmNGIwOGRiOTcucG5n&n=5biC5b69LnBuZw%3d%3d&icon=.png"
       },
       {
          "label":"嘉義縣",
+         "number":"8",
          "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Emblem_of_Chiayi_County.svg/800px-Emblem_of_Chiayi_County.svg.png"
       },
       {
          "label":"屏東縣",
+         "number":"3",
          "image":"https://img.ltn.com.tw/Upload/news/600/2016/06/17/1733018_1.jpg"
       },
       {
          "label":"澎湖縣",
+         "number":"2",
          "image":"https://www.penghu.gov.tw/userfiles/penghu/images/f01.jpg"
       }
    ]
@@ -115,10 +132,12 @@
     "data": [
        {
           "label":"花蓮縣",
+          "number":"6",
           "image":"https://www.hl.gov.tw/Upload/201901150943403659690.png"
        },
        {
           "label":"臺東縣",
+          "number":"8",
           "image":"https://wwwstorage.taitung.gov.tw/001/Upload/OldFile/Upload/CP/1287/Images/page01_pic05.gif"
        }
     ]
