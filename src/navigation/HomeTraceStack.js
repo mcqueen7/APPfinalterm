@@ -7,6 +7,7 @@ import { addMsgNum, selectGeneral, updateUserAsync} from "../redux/accountSlice"
 import sections from '../json/personal_section.json';
 import MsgBox from "../components/MsgBox";
 const HomeTraceStack = () => {
+  const dispatch = useDispatch();
   const general = useSelector(selectGeneral);
   const messeges=useSelector(selectmsgs);
   console.log("AAAAAAAA:"+messeges);
@@ -27,16 +28,19 @@ const HomeTraceStack = () => {
 useEffect(() => {
   dispatch(readMsgsAsync());
 }, [general])
-const dispatch = useDispatch();
  const focusInputStyle = {
     borderColor: colorMode == "light" ? "muted.700" : "white",
  }
  const onAddMsg=()=>{
   dispatch(addMsgsAsync({msg,username,userphoto}));//username+userphoto
  }
- const onUpdate = () => {
-  dispatch(addMsgNum());
-   updateMsgNum(general.msgNum);
+ const leaveMsg = () => {
+  //console.log("MSGNEM："+general.msgNum);
+  //dispatch(addMsgNum());
+  onAddMsg();
+  dispatch(readMsgsAsync());
+  updateMsgNum(msgNum+1);
+  setMsg("")
 }
 
   //const text="幹";
@@ -64,7 +68,7 @@ const dispatch = useDispatch();
                />
             </FormControl>
             {/* <Button  onPress={()=>{ console.log("ASJDIAJSDI："+msgs+username+userphoto);onAddMsg();readMsgsAsync();setMsg("")}}>留言</Button> */}
-            <Button  onPress={()=>{ console.log("GGGGGGGGGGG："+JSON.stringify(messeges)+"MSG MSG MSG"+msgs);onAddMsg();onUpdate();dispatch(readMsgsAsync());setMsg("")}}>留言</Button>
+            <Button  onPress={()=>{leaveMsg();}}>留言</Button>
           </HStack>
         </Box>
 
